@@ -1,0 +1,16 @@
+# ninja log v5
+665	848	7298028837504823	libs/algorithms/libalgorithms.a	56274bb85b86e754
+3	80	7298105833847581	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
+81	140	7298105834426032	untitled.exe	606a648077d524ec
+821	856	7298028837584600	libs/data_structures/libdata_structures.a	144621fd4734a048
+1	80	7298105857664215	build.ninja	e7be435efb96f164
+599	628	7298028835306406	libs/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj	34dc219c633f8482
+628	710	7298028835835618	libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj	cb60fac054d2ebaf
+710	821	7298028837235786	libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj	81366bcb681a6459
+600	665	7298028835665455	libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj	2de2b9dbd569577e
+598	625	7298028835266517	CMakeFiles/untitled.dir/libs/algorithms/algorithm.c.obj	2cecf54744bc25f1
+31	598	7298028834997238	CMakeFiles/untitled.dir/libs/data_structures/bitset/bitset.c.obj	c3b739a4a04828b1
+29	600	7298028835007205	CMakeFiles/untitled.dir/libs/algorithms/array/array.c.obj	b8dcc03d42e165ac
+625	730	7298028836322471	libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj	728354da5a2ca63c
+3	72	7298106807834725	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
+72	128	7298106808373120	untitled.exe	606a648077d524ec
