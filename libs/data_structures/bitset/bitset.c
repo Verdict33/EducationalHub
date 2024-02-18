@@ -1,5 +1,3 @@
-#include <stdio.h >
-#include <assert.h >
 #include "bitset.h"
 
 bitset bitset_create(unsigned max_value){
@@ -57,6 +55,15 @@ bitset bitset_symmetricDifference(bitset set1, bitset set2){
 bitset bitset_complement(bitset set) {
     unsigned int n = 32 - set.maxValue;
     return (bitset) {((~set.values) << n) >> n, set.maxValue};
+}
+
+
+void bitset_input (bitset *set, int size){
+    for(int i = 0; i < size; i++){
+        int value;
+        scanf("%d", &value);
+        bitset_insert(set, value);
+    }
 }
 
 

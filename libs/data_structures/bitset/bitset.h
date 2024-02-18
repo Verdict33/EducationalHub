@@ -3,6 +3,9 @@
 
 #include <stdint.h >
 #include <stdbool.h >
+#include <stdio.h >
+#include <assert.h >
+#include <stdlib.h>
 
 typedef struct bitset {
     uint32_t values; // множество
@@ -45,6 +48,9 @@ bitset bitset_symmetricDifference(bitset set1, bitset set2);
 
 // возвращает дополнение до универсума множества set
 bitset bitset_complement(bitset set);
+
+//Ввод множества set
+void bitset_input (bitset *set, int size);
 
 // вывод множества set
 void bitset_print(bitset set);

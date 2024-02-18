@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <malloc.h>
 
 typedef struct vector {
     int *data; // указатель на элементы вектора
