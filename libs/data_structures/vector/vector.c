@@ -14,13 +14,16 @@ void reserve(vector *v, size_t newCapacity) {
     if (newCapacity == 0) {
         free(v->data);
     } else {
+
         int *newData = realloc(v->data, newCapacity * sizeof(int));
+
         if (newData == NULL) {
             fprintf(stderr, "bad alloc");
             exit(1);
         } else {
             if (newCapacity <= v->size)
                 v->size = newCapacity;
+
             v->data = newData;
             v->capacity = newCapacity;
         }
