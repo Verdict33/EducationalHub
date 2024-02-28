@@ -1,8 +1,8 @@
 # ninja log v5
-3	93	7307629009877414	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
+3	63	7307631154982345	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
 517	814	7298792820080622	libs/algorithms/libalgorithms.a	6647e1a55e9faf16
-404	459	7307629013513455	untitled.exe	606a648077d524ec
-1	80	7298747941704415	build.ninja	e7be435efb96f164
+63	118	7307631155506302	untitled.exe	606a648077d524ec
+1	80	7308014247061887	build.ninja	e7be435efb96f164
 213	404	7307629012990789	libs/data_structures/libdata_structures.a	20a96b8a3977fb5e
 6	618	7298990711966284	libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj	cb60fac054d2ebaf
 599	628	7298028835306406	libs/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj	34dc219c633f8482
@@ -14,11 +14,3 @@
 5	207	7298730760293576	libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj	728354da5a2ca63c
 4	213	7307629011080489	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7876f7a6261ec093
 4	517	7298792817114155	libs/algorithms/CMakeFiles/algorithms.dir/sorting/sorting.c.obj	bf3c2d2b79d41e25
-2	61	7307630366430526	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
-61	114	7307630366940573	untitled.exe	606a648077d524ec
-3	58	7307630878640375	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
-58	113	7307630879162120	untitled.exe	606a648077d524ec
-3	65	7307631054856031	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
-65	121	7307631055396168	untitled.exe	606a648077d524ec
-3	63	7307631154982345	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
-63	118	7307631155506302	untitled.exe	606a648077d524ec
