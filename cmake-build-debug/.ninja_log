@@ -14,3 +14,10 @@
 5	207	7298730760293576	libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj	728354da5a2ca63c
 4	213	7307629011080489	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7876f7a6261ec093
 4	517	7298792817114155	libs/algorithms/CMakeFiles/algorithms.dir/sorting/sorting.c.obj	bf3c2d2b79d41e25
+3	636	7308091117078485	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
+6	636	7308091117078485	libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj	9284b98bb9588c84
+5	636	7308091117078485	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7876f7a6261ec093
+636	869	7308091119406496	libs/data_structures/libdata_structures.a	3e7befb6f613cdba
+869	1436	7308091124904164	untitled.exe	606a648077d524ec
+2	61	7308091442204947	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
+61	116	7308091442732980	untitled.exe	606a648077d524ec

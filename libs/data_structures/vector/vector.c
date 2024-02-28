@@ -47,7 +47,7 @@ void deleteVector(vector *v){
 
 
 bool isEmpty(vector *v){
-    return (v->data == 0);
+    return (v->size == 0);
 }
 
 
