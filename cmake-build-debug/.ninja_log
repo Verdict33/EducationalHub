@@ -1,9 +1,9 @@
 # ninja log v5
-3	63	7307631154982345	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
+2	61	7308091442204947	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
 517	814	7298792820080622	libs/algorithms/libalgorithms.a	6647e1a55e9faf16
-63	118	7307631155506302	untitled.exe	606a648077d524ec
-1	80	7308014247061887	build.ninja	e7be435efb96f164
-213	404	7307629012990789	libs/data_structures/libdata_structures.a	20a96b8a3977fb5e
+61	116	7308091442732980	untitled.exe	606a648077d524ec
+1	80	7310740371905106	build.ninja	e7be435efb96f164
+636	869	7308091119406496	libs/data_structures/libdata_structures.a	3e7befb6f613cdba
 6	618	7298990711966284	libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj	cb60fac054d2ebaf
 599	628	7298028835306406	libs/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj	34dc219c633f8482
 600	665	7298028835665455	libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj	2de2b9dbd569577e
@@ -12,12 +12,6 @@
 5	636	7298990711966284	CMakeFiles/untitled.dir/libs/data_structures/bitset/bitset.c.obj	c3b739a4a04828b1
 29	600	7298028835007205	CMakeFiles/untitled.dir/libs/algorithms/array/array.c.obj	b8dcc03d42e165ac
 5	207	7298730760293576	libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj	728354da5a2ca63c
-4	213	7307629011080489	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7876f7a6261ec093
-4	517	7298792817114155	libs/algorithms/CMakeFiles/algorithms.dir/sorting/sorting.c.obj	bf3c2d2b79d41e25
-3	636	7308091117078485	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
-6	636	7308091117078485	libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj	9284b98bb9588c84
 5	636	7308091117078485	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7876f7a6261ec093
-636	869	7308091119406496	libs/data_structures/libdata_structures.a	3e7befb6f613cdba
-869	1436	7308091124904164	untitled.exe	606a648077d524ec
-2	61	7308091442204947	CMakeFiles/untitled.dir/main.c.obj	e348cc72b6ed5ec8
-61	116	7308091442732980	untitled.exe	606a648077d524ec
+6	636	7308091117078485	libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj	9284b98bb9588c84
+4	517	7298792817114155	libs/algorithms/CMakeFiles/algorithms.dir/sorting/sorting.c.obj	bf3c2d2b79d41e25
