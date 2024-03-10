@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef struct matrix {
     int **values; // элементы матрицы
