@@ -88,14 +88,42 @@ int sum(int *a, int n){
     return s;
 }
 
-int main(){
-    int s[3];
+void test(){
+    int a[9] = {2,2,3,4, 6,8,9,9,9};
 
-    matrix m = getMemMatrix(3, 3);
+    int b[6] = {2,2,3,4, 6,8};
 
-    inputMatrix(&m);
+    matrix m = createMatrixFromArray(a, 3, 3);
+
+    matrix c = createMatrixFromArray(b, 3, 3);
+
+    insertionSortRowsMatrixByRowCriteria(m, sum);
 
     selectionSortColsMatrixByColCriteria(m, sum);
 
-    outputMatrix(m);
+    isSquareMatrix(&m);
+
+    areTwoMatricesEqual(&m, &c);
+
+    isEMatrix(&m);
+
+    isSymmetricMatrix(&m);
+
+    transposeSquareMatrix(&m);
+
+    transposeMatrix(&m);
+
+    getMinValuePos(m);
+
+    getMaxValuePos(m);
+
+    freeMemMatrix(&m);
+
+    freeMemMatrix(&c);
+}
+
+int main(){
+
+    test();
+
 }
