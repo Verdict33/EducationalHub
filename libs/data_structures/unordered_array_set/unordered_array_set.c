@@ -19,7 +19,7 @@ unordered_array_set unordered_array_set_create_from_array(int *a, size_t size){
 
 
 size_t unordered_array_set_in(unordered_array_set set, int value){
-    linearSearch_(set.data, set.size, value);
+    array_linearSearch(set.data, set.size, value);
 }
 
 
@@ -45,8 +45,8 @@ bool unordered_array_set_isEqual(unordered_array_set set1, unordered_array_set s
     if (set1.size != set2.size)
         return 0;
 
-    qsort(set1.data, set1.size, sizeof(int), compare_ints);
-    qsort(set2.data, set2.size, sizeof(int), compare_ints);
+    qsort(set1.data, set1.size, sizeof(int), array_compare_ints);
+    qsort(set2.data, set2.size, sizeof(int), array_compare_ints);
 
     return memcmp(set1.data, set2.data, sizeof(int) * set1.size) == 0;
 }
@@ -60,8 +60,8 @@ void unordered_array_set_isAbleAppend(unordered_array_set *set){
 void unordered_array_set_insert(unordered_array_set *set, int value){
     unordered_array_set_isAbleAppend(set);
 
-    if(linearSearch_(set->data, set->size, value) == set->size)
-        append_(set->data,&set->size, value);
+    if(array_linearSearch(set->data, set->size, value) == set->size)
+        array_append(set->data,&set->size, value);
 
 }
 
@@ -69,7 +69,7 @@ void unordered_array_set_insert(unordered_array_set *set, int value){
 void unordered_array_set_delete_element(unordered_array_set *set, int value){
     for (size_t i = 0; i < set->size; i++) {
         if (set->data[i] == value) {
-            deleteByPosSaveOrder_(set->data, &set->size, i);
+            array_deleteByPosSaveOrder(set->data, &set->size, i);
             break;
         }
     }

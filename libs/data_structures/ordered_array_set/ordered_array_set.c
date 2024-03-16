@@ -21,7 +21,7 @@ ordered_array_set ordered_array_set_create_from_array(const int *a, size_t size)
 }
 
 int ordered_array_set_in(ordered_array_set *set, int value) {
-    return binarySearch_(set->data, set->size, value);
+    return array_binarySearch(set->data, set->size, value);
 }
 
 int compare_ints(const void *a, const void *b) {
@@ -42,7 +42,7 @@ bool ordered_array_set_isEqual(ordered_array_set set1, ordered_array_set set2) {
 
 bool ordered_array_set_isSubset(ordered_array_set subset, ordered_array_set set) {
     for (size_t i = 0; i < subset.size; i++) {
-        if (binarySearch_(set.data, set.size, subset.data[i]) == -1)
+        if (array_binarySearch(set.data, set.size, subset.data[i]) == -1)
             return 0;
     }
 
@@ -55,8 +55,8 @@ void ordered_array_set_isAbleAppend(ordered_array_set *set) {
 
 void ordered_array_set_insert(ordered_array_set *set, int value) {
     ordered_array_set_isAbleAppend(set);
-    if (binarySearch_(set->data, set->size, value) == -1) {
-        int index_insert = binarySearchMoreOrEqual_(set->data, set->size, value);
+    if (array_binarySearch(set->data, set->size, value) == -1) {
+        int index_insert = array_binarySearchMoreOrEqual(set->data, set->size, value);
         for(int i = set->size; i > index_insert; i--){
             set->data[i] = set->data[i - 1];
         }
@@ -66,7 +66,7 @@ void ordered_array_set_insert(ordered_array_set *set, int value) {
 }
 
 void ordered_array_set_deleteElement(ordered_array_set *set, int value) {
-    int index = binarySearch_(set->data, set->size, value);
+    int index = array_binarySearch(set->data, set->size, value);
     if(index != -1){
         for(int i = index; i < set->size - 1; i++){
             set->data[i] = set->data[i + 1];
@@ -90,7 +90,7 @@ ordered_array_set ordered_array_set_union(ordered_array_set set1, ordered_array_
 ordered_array_set ordered_array_set_intersection(ordered_array_set set1, ordered_array_set set2){
     ordered_array_set set = ordered_array_set_create_from_array(set1.data, set1.size);
     for(int i = 0; i < set.size;){
-        int index = binarySearch_(set2.data, set2.size, set.data[i]);
+        int index = array_binarySearch(set2.data, set2.size, set.data[i]);
         if(index == -1)
             ordered_array_set_deleteElement(&set, set.data[i]);
         else
@@ -101,7 +101,7 @@ ordered_array_set ordered_array_set_intersection(ordered_array_set set1, ordered
 ordered_array_set ordered_array_set_difference(ordered_array_set set1, ordered_array_set set2) {
     ordered_array_set set = ordered_array_set_create_from_array(set1.data, set1.size);
     for (size_t i = 0; i < set.size; i++) {
-        size_t index = binarySearch_(set2.data, set2.size, set.data[i]);
+        size_t index = array_binarySearch(set2.data, set2.size, set.data[i]);
         if (index != -1)
             ordered_array_set_deleteElement(&set, set.data[i--]);
     }

@@ -1,6 +1,6 @@
 #include "vectorVoid.h"
 
-vectorVoid createVectorVoid(size_t n, size_t baseTypeSize){
+vectorVoid vector_void_create(size_t n, size_t baseTypeSize){
     if (malloc(sizeof(baseTypeSize) * n) == NULL){
         fprintf(stderr, "bad alloc");
         exit(1);
@@ -10,7 +10,7 @@ vectorVoid createVectorVoid(size_t n, size_t baseTypeSize){
 }
 
 
-void reserveVoid(vectorVoid *v, size_t newCapacity){
+void vector_void_reserve(vectorVoid *v, size_t newCapacity){
     if (newCapacity == 0) {
         free(v->data);
     } else {
@@ -31,32 +31,32 @@ void reserveVoid(vectorVoid *v, size_t newCapacity){
 }
 
 
-void shrinkToFitVoid(vectorVoid *v){
-    reserveVoid(v, v->size);
+void vector_void_shrinkToFit(vectorVoid *v){
+    vector_void_reserve(v, v->size);
 }
 
 
-void clearVoid(vectorVoid *v){
+void vector_void_clear(vectorVoid *v){
     v->size = 0;
 }
 
 
-void deleteVectorVoid(vectorVoid *v){
+void vector_void_delete(vectorVoid *v){
     free(v->data);
 }
 
 
-bool isEmptyVoid(vectorVoid *v){
+bool vector_void_isEmpty(vectorVoid *v){
     return (v->size == 0);
 }
 
 
-bool isFullVoid(vectorVoid *v){
+bool vector_void_isFull(vectorVoid *v){
     return (v->size == v->capacity);
 }
 
 
-void getVectorValueVoid(vectorVoid *v, size_t index, void *destination){
+void vector_void_get_value(vectorVoid *v, size_t index, void *destination){
     if (v == NULL || destination == NULL) {
         fprintf(stderr, "Error: NULL pointer argument detected\n");
         exit(1);
@@ -73,7 +73,7 @@ void getVectorValueVoid(vectorVoid *v, size_t index, void *destination){
 }
 
 
-void setVectorValueVoid(vectorVoid *v, size_t index, void *source){
+void vector_void_set_value(vectorVoid *v, size_t index, void *source){
     if (v == NULL || source == NULL) {
         fprintf(stderr, "Error: NULL pointer argument detected\n");
         exit(1);
@@ -89,20 +89,20 @@ void setVectorValueVoid(vectorVoid *v, size_t index, void *source){
 }
 
 
-void popBackVoid(vectorVoid *v){
-    if(isEmptyVoid(v)){
+void vector_void_popBack(vectorVoid *v){
+    if(vector_void_isEmpty(v)){
         fprintf(stderr, "vector is empty");
         exit(1);
     } else{
         v->size--;
-        shrinkToFitVoid(v);
+        vector_void_shrinkToFit(v);
     }
 }
 
 
-void pushBackVoid(vectorVoid *v, void *source){
-    if (isFullVoid(v)) {
-        reserveVoid(v, v->capacity == 0 ? 1 : v->capacity * 2);
+void vector_void_pushBack(vectorVoid *v, void *source){
+    if (vector_void_isFull(v)) {
+        vector_void_reserve(v, v->capacity == 0 ? 1 : v->capacity * 2);
     }
 
     char *destination = (char *)(v->data + v->size++ * v->baseTypeSize);

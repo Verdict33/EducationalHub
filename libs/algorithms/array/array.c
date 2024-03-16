@@ -4,23 +4,55 @@
 #include "array.h"
 
 
-void inputArray_(int *const a, const size_t n) {
+void array_input(int *const a, const size_t n) {
     for (size_t i = 0; i < n; i++)
         scanf("%d", &a[i]);
 }
 
-void outputArray_(const int *const a, const size_t n) {
+void array_output(const int *const a, const size_t n) {
     for (size_t i = 0; i < n; i++)
         printf("%d ", a[i]);
     printf("\n");
 }
 
-void append_(int *const a, size_t *const n, const int value) {
-    a[*n] = value;
-    (*n)++;
+size_t array_linearSearch(const int *a, const size_t n, int x) {
+    for (size_t i = 0; i < n; i++)
+        if (a[i] == x)
+            return i;
+    return n;
 }
 
-void insert_(int *const a, size_t *const n, const size_t pos,
+size_t array_binarySearch(const int *a, size_t n, int x) {
+    size_t left = 0;
+    size_t right = n - 1;
+    while (left <= right) {
+        size_t middle = left + (right - left) / 2;
+        if (a[middle] < x)
+            left = middle + 1;
+        else if (a[middle] > x)
+            right = middle - 1;
+        else
+            return middle;
+    }
+    return SIZE_MAX;
+}
+
+size_t array_binarySearchMoreOrEqual(const int *a, size_t n, int x) {
+    if (a[0] >= x)
+        return 0;
+    size_t left = 0;
+    size_t right = n;
+    while (right - left > 1) {
+        size_t middle = left + (right - left) / 2;
+        if (a[middle] < x)
+            left = middle;
+        else
+            right = middle;
+    }
+    return right;
+}
+
+void array_insert(int *const a, size_t *const n, const size_t pos,
              const int value) {
     assert (pos < *n);
     if (*n != 0) {
@@ -36,46 +68,50 @@ void insert_(int *const a, size_t *const n, const size_t pos,
     }
 }
 
-void deleteByPosSaveOrder_(int *a, size_t *n, const size_t pos) {
+void array_append(int *const a, size_t *const n, const int value) {
+    a[*n] = value;
+    (*n)++;
+}
+
+void array_deleteByPosSaveOrder(int *a, size_t *n, const size_t pos) {
     for (size_t i = pos; i < *n - 1; i++)
         a[i] = a[i + 1];
     (*n)--;
 }
 
-void deleteByPosUnsaveOrder_(int *a, size_t *n, size_t pos) {
+void array_deleteByPosUnsaveOrder(int *a, size_t *n, size_t pos) {
     a[pos] = a[*n - 1];
     (*n)--;
 }
 
-size_t linearSearch_(const int *a, const size_t n, int x) {
-    for (size_t i = 0; i < n; i++)
-        if (a[i] == x)
-            return i;
-    return n;
-}
-
-int any_(const int *a, size_t n, int (*predicate )(int)) {
-    for (size_t i = 0; i < n; i++)
-        if (predicate(a[i]))
-            return 1;
-    return 0;
-}
-
-int all_(const int *a, size_t n, int (*predicate )(int)) {
+int array_all(const int *a, size_t n, int (*predicate )(int)) {
     for (size_t i = 0; i < n; i++)
         if (!predicate(a[i]))
             return 0;
     return 1;
 }
 
-int countIf_(const int *const a, const size_t n, int (*predicate )(int)) {
+int array_any(const int *a, size_t n, int (*predicate )(int)) {
+    for (size_t i = 0; i < n; i++)
+        if (predicate(a[i]))
+            return 1;
+    return 0;
+}
+
+void array_forEach(const int *source, int *dest, const size_t n, const int (*
+predicate )(int)) {
+    for (size_t i = 0; i < n; i++)
+        dest[i] = predicate(source[i]);
+}
+
+int array_countIf(const int *const a, const size_t n, int (*predicate )(int)) {
     int count = 0;
     for (size_t i = 0; i < n; i++)
         count += predicate(a[i]);
     return count;
 }
 
-void deleteIf_(int *const a, size_t *const n, int (*deletePredicate )(
+void array_deleteIf(int *const a, size_t *const n, int (*deletePredicate )(
         int)) {
     size_t iRead = 0;
     while (iRead < *n && !deletePredicate(a[iRead]))
@@ -92,45 +128,7 @@ void deleteIf_(int *const a, size_t *const n, int (*deletePredicate )(
     *n = iWrite;
 }
 
-void forEach_(const int *source, int *dest, const size_t n, const int (*
-predicate )(int)) {
-    for (size_t i = 0; i < n; i++)
-        dest[i] = predicate(source[i]);
-}
-
-size_t binarySearch_(const int *a, size_t n, int x) {
-    size_t left = 0;
-    size_t right = n - 1;
-    while (left <= right) {
-        size_t middle = left + (right - left) / 2;
-        if (a[middle] < x)
-            left = middle + 1;
-        else if (a[middle] > x)
-            right = middle - 1;
-        else
-            return middle;
-    }
-    return SIZE_MAX;
-}
-
-
-size_t binarySearchMoreOrEqual_(const int *a, size_t n, int x) {
-    if (a[0] >= x)
-        return 0;
-    size_t left = 0;
-    size_t right = n;
-    while (right - left > 1) {
-        size_t middle = left + (right - left) / 2;
-        if (a[middle] < x)
-            left = middle;
-        else
-            right = middle;
-    }
-    return right;
-}
-
-
-int compare_ints(const void *a, const void *b) {
+int array_compare_ints(const void *a, const void *b) {
     const int *num1 = (const int *) a;
     const int *num2 = (const int *) b;
     return *num1 - *num2;

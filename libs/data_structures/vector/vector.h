@@ -9,41 +9,41 @@ typedef struct vector {
 } vector;
 
 // Возвращает структуру-дескриптор вектор из n значений
-vector createVector(size_t n);
+vector vector_create(size_t n);
 
 // Изменяет количество памяти, выделенное под хранение элементов вектора
-void reserve(vector *v, size_t newCapacity);
+void vector_reserve(vector *v, size_t newCapacity);
 
 // Удаляет элементы из контейнера, но не освобождает выделенную память
-void clear(vector *v);
+void vector_clear(vector *v);
 
 // Освобождает память, выделенную под неиспользуемые элементы
-void shrinkToFit(vector *v);
+void vector_shrinkToFit(vector *v);
 
 // Освобождает память, выделенную вектору
-void deleteVector(vector *v);
+void vector_delete(vector *v);
 
 // Функции проверки на то, является ли вектор пустым
-bool isEmpty(vector *v);
+bool vector_isEmpty(vector *v);
 
 // Функции проверки на то, является ли вектор полным
-bool isFull(vector *v);
+bool vector_isFull(vector *v);
 
 // Возвращает i-ый элемент вектора v
-int getVectorValue(vector *v, size_t i);
+int vector_get_value(vector *v, size_t i);
 
 //добавляет элемент x в конец вектора v. Если вектор заполнен, увеличивает
 // количество выделенной ему памяти в 2 раза, используя reserve
-void pushBack(vector *v, int x);
+void vector_pushBack(vector *v, int x);
 
 // Удаляет последний элемент из вектора
-void popBack(vector *v);
+void vector_popBack(vector *v);
 
 // Возвращает указатель на index-ый элемент вектора
-int* atVector(vector *v, size_t index);
+int* vector_at(vector *v, size_t index);
 
 // Возвращает указатель на последний элемент вектора
-int* back(vector *v);
+int* vector_back(vector *v);
 
 // Возвращает указатель на нулевой элемент вектора
-int* front(vector *v);
+int* vector_front(vector *v);

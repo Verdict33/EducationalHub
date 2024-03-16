@@ -18,37 +18,37 @@ typedef struct vectorVoid {
 } vectorVoid;
 
 // Возвращает структуру-дескриптор вектор из n значений, с типом данных baseTypeSize
-vectorVoid createVectorVoid(size_t n, size_t baseTypeSize);
+vectorVoid vector_void_create(size_t n, size_t baseTypeSize);
 
 // Изменяет количество памяти, выделенное под хранение элементов вектора
-void reserveVoid(vectorVoid *v, size_t newCapacity);
+void vector_void_reserve(vectorVoid *v, size_t newCapacity);
 
 // Освобождает память, выделенную под неиспользуемые элементы
-void shrinkToFitVoid(vectorVoid *v);
+void vector_void_shrinkToFit(vectorVoid *v);
 
 // Удаляет элементы из контейнера, но не освобождает выделенную память
-void clearVoid(vectorVoid *v);
+void vector_void_clear(vectorVoid *v);
 
 // Освобождает память, выделенную вектору
-void deleteVectorVoid(vectorVoid *v);
+void vector_void_delete(vectorVoid *v);
 
 // Функции проверки на то, является ли вектор пустым
-bool isEmptyVoid(vectorVoid *v);
+bool vector_void_isEmpty(vectorVoid *v);
 
 // Функции проверки на то, является ли вектор полным
-bool isFullVoid(vectorVoid *v);
+bool vector_void_isFull(vectorVoid *v);
 
 // Записывает по адресу destination index-ый элемент вектора v
-void getVectorValueVoid(vectorVoid *v, size_t index, void *destination);
+void vector_void_get_value(vectorVoid *v, size_t index, void *destination);
 
 // записывает на index-ый элемент вектора v значение, расположенное по адресу source
-void setVectorValueVoid(vectorVoid *v, size_t index, void *source);
+void vector_void_set_value(vectorVoid *v, size_t index, void *source);
 
 // Удаляет последний элемент из вектора
-void popBackVoid(vectorVoid *v);
+void vector_void_popBack(vectorVoid *v);
 
 // добавляет элемент x в конец вектора v. Если вектор заполнен, увеличивает
 // количество выделенной ему памяти в 2 раза, используя reserve
-void pushBackVoid(vectorVoid *v, void *source);
+void vector_void_pushBack(vectorVoid *v, void *source);
 
 #endif
