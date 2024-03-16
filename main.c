@@ -76,3 +76,26 @@
 //
 //    return 0;
 //}
+
+#include "libs/data_structures/matrix/matrix.h"
+
+int sum(int *a, int n){
+    int s = 0;
+
+    for(int i = 0; i < n; i++)
+        s += a[i];
+
+    return s;
+}
+
+int main(){
+    int s[3];
+
+    matrix m = getMemMatrix(3, 3);
+
+    inputMatrix(&m);
+
+    selectionSortColsMatrixByColCriteria(m, sum);
+
+    outputMatrix(m);
+}

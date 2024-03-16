@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Sergei/CLionProjects/poligon/libs/data_structures
+# Install script for directory: C:/Users/Sergei/CLionProjects/untitled/libs/data_structures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

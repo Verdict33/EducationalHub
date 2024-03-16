@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Sergei/CLionProjects/poligon/libs/algorithms
+# Install script for directory: C:/Users/Sergei/CLionProjects/untitled/libs/algorithms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
