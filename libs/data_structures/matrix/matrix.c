@@ -47,7 +47,7 @@ void matrices_input(matrix *ms, int nMatrices){
 void matrix_output(matrix m){
     for (int i = 0; i < m.nRows; ++i) {
         for (int j = 0; j < m.nCols; ++j) {
-            printf("%d", m.values[i][j]);
+            printf("%d ", m.values[i][j]);
         }
         printf("\n");
     }
@@ -125,20 +125,28 @@ bool matrix_isSquare(matrix *m){
 }
 
 bool matrices_two_areEqual(matrix *m1, matrix *m2){
-    if(m1->nRows != m2->nRows || m1->nCols != m2->nCols)
+    if (m1->nRows != m2->nRows || m1->nCols != m2->nCols)
         return 0;
 
-    for(int i = 0; i < m1->nRows; ++i){
+    int elements_m1 = m1->nRows * m1->nCols;
+    int elements_m2 = m2->nRows * m2->nCols;
+    int *values_m1 = (int *)malloc(elements_m1 * sizeof(int));
+    int *values_m2 = (int *)malloc(elements_m2 * sizeof(int));
 
-        for(int j = 0; j < m1->nCols; ++j){
+    if (values_m1 == NULL || values_m2 == NULL)
+        return 0;
 
-            if(m1->values[i][j] != m2->values[i][j])
-
-                return 0;
-        }
+    for (int i = 0; i < m1->nRows; i++) {
+        memcpy(values_m1 + i * m1->nCols, m1->values[i], m1->nCols * sizeof(int));
+        memcpy(values_m2 + i * m2->nCols, m2->values[i], m2->nCols * sizeof(int));
     }
 
-    return 1;
+    bool equal = memcmp(values_m1, values_m2, elements_m1 * sizeof(int)) == 0;
+
+    free(values_m1);
+    free(values_m2);
+
+    return equal;
 }
 
 bool matrix_isE(matrix *m){
