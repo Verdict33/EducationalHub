@@ -74,50 +74,62 @@ void matrix_swap_columns(matrix m, int j1, int j2){
     }
 }
 
-void matrix_insertion_sort_rows_by_row_criteria(matrix m, int (*criteria)(int*, int)){
-    for (int i = 0; i < m.nRows - 1; ++i) {
+void matrix_insertion_sort_rows_by_row_criteria(matrix m, int (*criteria)(int *, int)) {
+    int *values = (int *) malloc(sizeof(int) * m.nRows);
 
-        int min1 = criteria(m.values[i], m.nCols);
-        int isTrue = i;
-
-        for (int j = 1; j < m.nRows; ++j) {
-
-            int min2 = criteria(m.values[j], m.nCols);
-            if (min2 < min1)
-                isTrue = j;
-        }
-
-        if (isTrue != i)
-            matrix_swap_rows(m, i, isTrue);
+    for (int i = 0; i < m.nRows; i++) {
+        values[i] = criteria(m.values[i], m.nCols);
     }
+
+    for (int i = 1; i < m.nRows; i++) {
+        int key_value = values[i];
+        int j = i;
+
+        while (j > 0 && values[j - 1] > key_value) {
+
+            matrix_swap_rows(m, j - 1, j);
+
+            int temp = values[j - 1];
+            values[j - 1] = values[j];
+            values[j] = temp;
+            j--;
+        }
+    }
+    free(values);
 }
 
 void matrix_selection_sort_cols_by_col_criteria(matrix m, int (*criteria)(int*, int)){
-    for(int i = 0; i < m.nCols - 1; ++i){
+    int *values = (int *) malloc(sizeof(int) * m.nCols);
+    int *temp = (int *) malloc(sizeof(int) * m.nRows);
 
-        int isTrue = i;
-        int a[m.nRows];
+    for (int j = 0; j < m.nCols; j++) {
+        for (int i = 0; i < m.nRows; i++) {
+            temp[i] = m.values[i][j];
+        }
 
-        for(int j = 0; j < m.nRows; ++j)
-            a[j] = m.values[j][i];
+        values[j] = criteria(temp, m.nRows);
+    }
 
-        for(int j = 1; j < m.nCols; ++j){
-            int b[m.nRows];
+    for (int i = 0; i < m.nCols - 1; i++) {
+        int min_index = i;
 
-            for(int k = 0; k < m.nRows; ++k)
-                b[k] = m.values[k][j];
-
-            if(criteria(a, m.nRows) > criteria(b, m.nRows)) {
-                isTrue = j;
-
-                for(int l = 0; l < m.nRows; ++l)
-                    a[l] = b[l];
+        for (int j = i + 1; j < m.nCols; j++) {
+            if (values[j] < values[min_index]) {
+                min_index = j;
             }
         }
 
-        if(isTrue != i)
-            matrix_swap_columns(m, i, isTrue);
+        if (min_index != i) {
+            int temp = values[i];
+            values[i] = values[min_index];
+            values[min_index] = temp;
+
+            matrix_swap_columns(m, i, min_index);
+        }
     }
+
+    free(values);
+    free(temp);
 }
 
 bool matrix_isSquare(matrix *m){

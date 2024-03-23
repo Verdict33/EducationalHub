@@ -79,7 +79,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -106,6 +107,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libs/algorithms/sorting/sorting.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "laboratornaya/laboratornaya_16/laboratornaya_16.h",
 			"sourceGroupIndex" : 1
 		}
 	],
