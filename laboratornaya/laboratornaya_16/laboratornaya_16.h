@@ -12,9 +12,8 @@ void exercise_1(matrix m);
 
  Дополнительные функции:
  (a) int getMax(int *a, int n)
- (b) void sortRowsByMinElement(matrix m)
 */
-void exercise_2();
+void exercise_2(matrix m);
 
 
 /*
@@ -23,19 +22,14 @@ void exercise_2();
 
  Дополнительные функции:
  (a) int getMin(int *a, int n)
- (b) void sortColsByMinElement(matrix m)
 */
-void exercise_3();
+void exercise_3(matrix m);
 
 
 /*
  4. Если данная квадратная матрица 𝐴 симметрична, то заменить 𝐴 ее квадратом (𝐴^2)
-
- Дополнительные функции:
- (a) matrix mulMatrices(matrix m1, matrix m2)
- (b) void getSquareOfMatrixIfSymmetric(matrix *m)
  */
-void exercise_4();
+void exercise_4(matrix m);
 
 
 /*
@@ -47,7 +41,7 @@ void exercise_4();
  (b) long long getSum(int *a, int n)
  (с) void transposeIfMatrixHasNotEqualSumOfRows(matrix m)
  */
-void exercise_5();
+void exercise_5(matrix m);
 
 
 /*
@@ -57,7 +51,7 @@ void exercise_5();
   Дополнительные функции:
  (a) bool isMutuallyInverseMatrices(matrix m1, matrix m2)
  */
-void exercise_6();
+void exercise_6(matrix m);
 
 
 /*
@@ -69,7 +63,7 @@ void exercise_6();
  (a) int max(int a, int b)
  (b) long long findSumOfMaxesOfPseudoDiagonal(matrix m)
  */
-void exercise_7();
+void exercise_7(matrix m);
 
 
 /*
@@ -78,7 +72,7 @@ void exercise_7();
  Дополнительные функции:
  (a) int getMinInArea(matrix m)
  */
-void exercise_8();
+void exercise_8(matrix m);
 
 
 /*
@@ -89,7 +83,7 @@ void exercise_8();
  (b) void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int))
  (с) void sortByDistances(matrix m)
  */
-void exercise_9();
+void exercise_9(matrix m);
 
 
 /*
@@ -101,7 +95,7 @@ void exercise_9();
  (b) int countNUnique(long long *a, int n)
  (c) int countEqClassesByRowsSum(matrix m)
  */
-void exercise_10();
+void exercise_10(matrix m);
 
 
 /*
@@ -111,7 +105,7 @@ void exercise_10();
  Дополнительные функции:
  (a) int getNSpecialElement(matrix m)
  */
-void exercise_11();
+void exercise_11(matrix m);
 
 
 /*
@@ -122,7 +116,7 @@ void exercise_11();
  (a) position getLeftMin(matrix m)
  (b) void swapPenultimateRow(matrix m, int n)
  */
-void exercise_12();
+void exercise_12(matrix m);
 
 
 /*
@@ -133,7 +127,7 @@ void exercise_12();
  (b) bool hasAllNonDescendingRows(matrix m)
  (c) int countNonDescendingRowsMatrices(matrix *ms, int nMatrix)
  */
-void exercise_13();
+void exercise_13(matrix m);
 
 
 /*
@@ -144,14 +138,14 @@ void exercise_13();
  (b) int countZeroRows(matrix m)
  (c) void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix)
  */
-void exercise_14();
+void exercise_14(matrix m);
 
 
 /*
  15. Дан массив целочисленных квадратных матриц. Вывести матрицы с наименьшей нормой.
  В качестве нормы матрицы взять максимум абсолютных величин ее элементов
  */
-void exercise_15();
+void exercise_15(matrix m);
 
 
 /*
@@ -162,7 +156,7 @@ void exercise_15();
  (a) int min2(int a, int b)
  (b) int getNSpecialElement2(matrix m)
  */
-void exercise_16();
+void exercise_16(matrix m);
 
 
 /*
@@ -175,7 +169,7 @@ void exercise_16();
  (c) double getCosine(int *a, int *b, int n)
  (d) int getVectorIndexWithMaxAngle(matrix m, int *b)
  */
-void exercise_17();
+void exercise_17(matrix m);
 
 
 /*
@@ -186,4 +180,4 @@ void exercise_17();
  (a) long long getScalarProductRowAndCol(matrix m, int i, int j)
  (b) long long getSpecialScalarProduct(matrix m, int n)
  */
-void exercise_18();
+void exercise_18(matrix m);

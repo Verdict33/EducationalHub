@@ -38,16 +38,18 @@ void exercise_3(matrix m){
 
 
 
-matrix mulMatrices(matrix m1, matrix m2){
+void exercise_4(matrix m){
+    if(matrix_isSymmetric(&m) == 0){
+        printf("This matrix is not symmetric");
+        exit(1);
 
-}
-
-void getSquareOfMatrixIfSymmetric(matrix *m){
-
-}
-
-void exercise_4(){
-
+    } else{
+        for (int i = 0; i < m.nRows; ++i) {
+            for (int j = 0; j < m.nCols; ++j) {
+                m.values[i][j] *= m.values[i][j];
+            }
+        }
+    }
 }
 
 
@@ -64,7 +66,7 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m){
 
 }
 
-void exercise_5(){
+void exercise_5(matrix m){
 
 }
 
@@ -74,7 +76,7 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2){
 
 }
 
-void exercise_6(){
+void exercise_6(matrix m){
 
 }
 
@@ -88,7 +90,7 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m){
 
 }
 
-void exercise_7(){
+void exercise_7(matrix m){
 
 }
 
@@ -98,7 +100,7 @@ int getMinInArea(matrix m){
 
 }
 
-void exercise_8(){
+void exercise_8(matrix m){
 
 }
 
@@ -116,7 +118,7 @@ void sortByDistances(matrix m){
 
 }
 
-void exercise_9(){
+void exercise_9(matrix m){
 
 }
 
@@ -134,7 +136,7 @@ int countEqClassesByRowsSum(matrix m){
 
 }
 
-void exercise_10(){
+void exercise_10(matrix m){
 
 }
 
@@ -144,7 +146,7 @@ int getNSpecialElement(matrix m){
 
 }
 
-void exercise_11(){
+void exercise_11(matrix m){
 
 }
 
@@ -158,7 +160,7 @@ void swapPenultimateRow(matrix m, int n){
 
 }
 
-void exercise_12(){
+void exercise_12(matrix m){
 
 }
 
@@ -176,7 +178,7 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix){
 
 }
 
-void exercise_13(){
+void exercise_13(matrix m){
 
 }
 
@@ -194,13 +196,13 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix){
 
 }
 
-void exercise_14(){
+void exercise_14(matrix m){
 
 }
 
 
 
-void exercise_15(){
+void exercise_15(matrix m){
 
 }
 
@@ -214,7 +216,7 @@ int getNSpecialElement2(matrix m){
 
 }
 
-void exercise_16(){
+void exercise_16(matrix m){
 
 }
 
@@ -236,7 +238,7 @@ int getVectorIndexWithMaxAngle(matrix m, int *b){
 
 }
 
-void exercise_17(){
+void exercise_17(matrix m){
 
 }
 
@@ -250,6 +252,6 @@ long long getSpecialScalarProduct(matrix m, int n){
 
 }
 
-void exercise_18(){
+void exercise_18(matrix m){
 
 }
