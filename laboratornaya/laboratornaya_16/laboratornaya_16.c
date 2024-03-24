@@ -1,5 +1,5 @@
 #include "laboratornaya_16.h"
-
+#include "../../libs/algorithms/array/array.h"
 void exercise_1(matrix m){
     position min = matrix_get_min_value_pos(m);
     position max = matrix_get_max_value_pos(m);
@@ -10,10 +10,12 @@ void exercise_1(matrix m){
 
 int getMax(int *a, int n){
     int max = a[0];
+
     for (int i = 0; i < n; ++i) {
         if (max < a[i])
             max = a[i];
     }
+
     return max;
 }
 
@@ -25,10 +27,12 @@ void exercise_2(matrix m){
 
 int getMin(int *a, int n){
     int min = a[0];
+
     for (int i = 0; i < n; ++i) {
         if (min > a[i])
             min = a[i];
     }
+
     return min;
 }
 
@@ -54,20 +58,31 @@ void exercise_4(matrix m){
 
 
 
-bool isUnique(long long *a, int n){
-
-}
-
-long long getSum(int *a, int n){
-
-}
-
-void transposeIfMatrixHasNotEqualSumOfRows(matrix m){
-
-}
-
 void exercise_5(matrix m){
+    int n_array = 0;
+    int array_sum_rows[n_array];
+    int sum = 0;
 
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            sum += m.values[i][j];
+        }
+
+        array_sum_rows[i] = sum;
+        sum = 0;
+    }
+
+    int is = 0;
+    for (int i = 0; i < n_array - 1; ++i) {
+        for (int j = i + 1; j < n_array; j) {
+            if(array_sum_rows[i] == array_sum_rows[j])
+                is = 0;
+        }
+    }
+    is = 1;
+
+    if(array_elements_areUnigue(array_sum_rows, n_array) == 1)
+        matrix_transpose_square(&m);
 }
 
 

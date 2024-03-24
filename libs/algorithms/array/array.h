@@ -2,6 +2,10 @@
 #define INC_ARRAY_H
 
 #include <stddef.h>
+#include <stdio.h>
+#include <limits.h>
+#include <assert.h>
+#include <stdbool.h>
 
 // ввод массива data размера n
 void array_input(int *a, size_t n);
@@ -65,4 +69,7 @@ void array_deleteIf(int *a, size_t *n, int (*deletePredicate )(int));
 //сравнивает элементы, оно вернёт значение больше нуля если первое число больше второго,
 // отрицательное если второе число больше первого и вернёт 0 если они равны
 int array_compare_ints(const void *a, const void *b);
+
+//
+bool array_elements_areUnigue(int *a, int n);
 #endif

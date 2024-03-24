@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/Sergei/CLionProjects/untitled/cmake-build-debug/
 
 build cmake_object_order_depends_target_untitled: phony || cmake_object_order_depends_target_algorithms cmake_object_order_depends_target_data_structures
 
-build CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_vector_and_matrix.c.obj: C_COMPILER__untitled_unscanned_Debug C$:/Users/Sergei/CLionProjects/untitled/laboratornaya/tests/tests$ for$ vector$ and$ matrix.c || cmake_object_order_depends_target_untitled
-  DEP_FILE = CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_vector_and_matrix.c.obj.d
+build CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_vector.c.obj: C_COMPILER__untitled_unscanned_Debug C$:/Users/Sergei/CLionProjects/untitled/laboratornaya/tests/tests$ for$ vector.c || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_vector.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir\laboratornaya\tests
@@ -91,6 +91,12 @@ build CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.o
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir\laboratornaya\tests
 
+build CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj: C_COMPILER__untitled_unscanned_Debug C$:/Users/Sergei/CLionProjects/untitled/laboratornaya/tests/tests$ for$ matrix.c || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_matrix.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir\laboratornaya\tests
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled
@@ -99,7 +105,7 @@ build CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.o
 #############################################
 # Link the executable untitled.exe
 
-build untitled.exe: C_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_vector_and_matrix.c.obj CMakeFiles/untitled.dir/libs/algorithms/array/array.c.obj CMakeFiles/untitled.dir/libs/algorithms/algorithm.c.obj CMakeFiles/untitled.dir/libs/data_structures/bitset/bitset.c.obj CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj CMakeFiles/untitled.dir/main.c.obj CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj | libs/algorithms/libalgorithms.a libs/data_structures/libdata_structures.a || libs/algorithms/libalgorithms.a libs/data_structures/libdata_structures.a
+build untitled.exe: C_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_vector.c.obj CMakeFiles/untitled.dir/libs/algorithms/array/array.c.obj CMakeFiles/untitled.dir/libs/algorithms/algorithm.c.obj CMakeFiles/untitled.dir/libs/data_structures/bitset/bitset.c.obj CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj CMakeFiles/untitled.dir/main.c.obj CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj | libs/algorithms/libalgorithms.a libs/data_structures/libdata_structures.a || libs/algorithms/libalgorithms.a libs/data_structures/libdata_structures.a
   FLAGS = -g
   LINK_LIBRARIES = libs/algorithms/libalgorithms.a  libs/data_structures/libdata_structures.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled.dir

@@ -3,7 +3,7 @@ project(untitled C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(untitled "laboratornaya/tests/tests for vector and matrix.c"
+add_executable(untitled "laboratornaya/tests/tests for vector.c"
         libs/algorithms/array/array.c
         libs/algorithms/array/array.h
         libs/algorithms/algorithm.c
@@ -13,6 +13,10 @@ add_executable(untitled "laboratornaya/tests/tests for vector and matrix.c"
         laboratornaya/laboratornaya_16/laboratornaya_16.c
         main.c
         "laboratornaya/tests/tests for laboratornaya_16.c"
+        "laboratornaya/tests/tests for matrix.c"
+        "laboratornaya/tests/tests for laboratornaya_16.h"
+        "laboratornaya/tests/tests for matrix.h"
+        "laboratornaya/tests/tests for vector.h"
 )
 
 add_subdirectory(libs)

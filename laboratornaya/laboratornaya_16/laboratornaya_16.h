@@ -37,9 +37,7 @@ void exercise_4(matrix m);
  то транспонировать матрицу
 
  Дополнительные функции:
- (a) bool isUnique(long long *a, int n)
- (b) long long getSum(int *a, int n)
- (с) void transposeIfMatrixHasNotEqualSumOfRows(matrix m)
+ (a) long long getSum(int *a, int n)
  */
 void exercise_5(matrix m);
 

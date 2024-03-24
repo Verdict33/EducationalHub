@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <limits.h>
-#include <assert.h>
 #include "array.h"
 
 
@@ -132,4 +129,14 @@ int array_compare_ints(const void *a, const void *b) {
     const int *num1 = (const int *) a;
     const int *num2 = (const int *) b;
     return *num1 - *num2;
+}
+
+bool array_elements_areUnigue(int *a, int n){
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = i + 1; j < n; j) {
+            if(a[i] == a[j])
+                return 0;
+        }
+    }
+    return 1;
 }
