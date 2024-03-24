@@ -9,3 +9,6 @@ int test_for_exercise_3();
 
 //Тест для задания 4
 int test_for_exercise_4();
+
+//Тест для задания 5
+int test_for_exercise_5();

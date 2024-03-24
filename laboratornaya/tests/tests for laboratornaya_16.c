@@ -34,3 +34,11 @@ int test_for_exercise_4(){
     matrix_output(m);
     matrix_free_mem(&m);
 }
+
+int test_for_exercise_5(){
+    matrix m = matrix_get_mem(4, 4);
+    matrix_input(&m);
+    exercise_5(m);
+    matrix_output(m);
+    matrix_free_mem(&m);
+}

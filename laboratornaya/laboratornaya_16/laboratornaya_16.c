@@ -59,29 +59,18 @@ void exercise_4(matrix m){
 
 
 void exercise_5(matrix m){
-    int n_array = 0;
-    int array_sum_rows[n_array];
-    int sum = 0;
+    int sum_elements_row[m.nRows];
 
-    for (int i = 0; i < m.nRows; ++i) {
-        for (int j = 0; j < m.nCols; ++j) {
+    for(int i = 0; i < m.nRows; i++){
+        int sum = 0;
+
+        for(int j = 0; j < m.nCols; j++)
             sum += m.values[i][j];
-        }
 
-        array_sum_rows[i] = sum;
-        sum = 0;
+        sum_elements_row[i] = sum;
     }
 
-    int is = 0;
-    for (int i = 0; i < n_array - 1; ++i) {
-        for (int j = i + 1; j < n_array; j) {
-            if(array_sum_rows[i] == array_sum_rows[j])
-                is = 0;
-        }
-    }
-    is = 1;
-
-    if(array_elements_areUnigue(array_sum_rows, n_array) == 1)
+    if(array_elements_areUnigue(sum_elements_row, m.nRows))
         matrix_transpose_square(&m);
 }
 
