@@ -109,10 +109,21 @@ int getMinInArea(matrix m){
 
 }
 
-void exercise_8(matrix m){
+int exercise_8(matrix m) {
+    position max = matrix_get_max_value_pos(m);
+    int min = INT_MAX;
 
+    for (int i = 0; i <= max.rowIndex; ++i) {
+        int colum_off = (max.rowIndex - i) << 1;
+        int column_on_start = MAX(0, max.colIndex - colum_off);
+        int column_on_end = MIN((m.nCols - 1), max.colIndex + colum_off);
+
+        for (int j = column_on_start; j < column_on_end; ++j) {
+            min = MIN(min, m.values[i][j]);
+        }
+    }
+    return min;
 }
-
 
 
 float getDistance(int *a, int n){

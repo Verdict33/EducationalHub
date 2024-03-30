@@ -1,4 +1,6 @@
 #include "../../libs/data_structures/matrix/matrix.h"
+#define MIN(i, j) (((i) < (j)) ? (i) : (j))
+#define MAX(i, j) (((i) > (j)) ? (i) : (j))
 
 /*
 1. Дана квадратная матрица, все элементы которой различны. Поменять местами
@@ -60,11 +62,8 @@ void exercise_7(matrix m);
 
 /*
  8. Дана прямоугольная матрица, все элементы которой различны. Найти минимальный элемент матрицы в выделенной области
-
- Дополнительные функции:
- (a) int getMinInArea(matrix m)
  */
-void exercise_8(matrix m);
+int exercise_8(matrix m);
 
 
 /*

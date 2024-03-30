@@ -52,3 +52,10 @@ int test_for_exercise_6(){
     matrix_free_mem(&m1);
     matrix_free_mem(&m2);
 }
+
+int test_for_exercise_8(){
+    matrix m1 = matrix_get_mem(3, 3);
+    matrix_input(&m1);
+    printf("%d", exercise_8(m1));
+    matrix_free_mem(&m1);
+}
