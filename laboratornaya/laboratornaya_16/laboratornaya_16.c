@@ -76,12 +76,17 @@ void exercise_5(matrix m){
 
 
 
-bool isMutuallyInverseMatrices(matrix m1, matrix m2){
+int exercise_6(matrix m1, matrix m2){
+    matrix result = matrix_square_multiplication(&m1, &m2);
 
-}
+    if (!matrix_isE(&result)) {
+        matrix_free_mem(&result);
+        return 0;
 
-void exercise_6(matrix m){
-
+    } else {
+        matrix_free_mem(&result);
+        return 1;
+    }
 }
 
 

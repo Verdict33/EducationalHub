@@ -84,3 +84,6 @@ matrix matrix_create_from_array(const int *a, size_t nRows, size_t nCols);
 // возвращает указатель на нулевую матрицу массива из nMatrices матриц, размещенных
 //в динамической памяти, построенных из элементов массива a
 matrix *matrix_create_array_of_matrix_from_array(const int *values, size_t nMatrices, size_t nRows, size_t nCols);
+
+//
+matrix matrix_square_multiplication(matrix *m1, matrix *m2);

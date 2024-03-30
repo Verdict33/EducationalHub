@@ -296,3 +296,17 @@ matrix *matrix_create_array_of_matrix_from_array(const int *values, size_t nMatr
     return ms;
 }
 
+matrix matrix_square_multiplication(matrix *m1, matrix *m2) {
+    matrix result = matrix_get_mem(m1->nRows, m1->nCols);
+
+    for (int i = 0; i < m1->nRows; i++) {
+        for (int j = 0; j < m1->nCols; j++) {
+            result.values[i][j] = 0;
+
+            for (int k = 0; k < m1->nCols; k++) {
+                result.values[i][j] += m1->values[i][k] * m2->values[k][j];
+            }
+        }
+    }
+    return result;
+}
