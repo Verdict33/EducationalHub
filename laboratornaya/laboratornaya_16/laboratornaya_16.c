@@ -96,7 +96,7 @@ float getDistance(int *a, int n) {
 }
 
 void exercise_9(matrix m){
-    matrix_insertion_sort_rows_by_row_criteria(m, getDistance)
+    matrix_insertion_sort_rows_by_row_criteria(m, getDistance);
 }
 
 

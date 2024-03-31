@@ -74,7 +74,7 @@ void matrix_swap_columns(matrix m, int j1, int j2){
     }
 }
 
-void matrix_insertion_sort_rows_by_row_criteria(matrix m, int (*criteria)(int *, int)) {
+void matrix_insertion_sort_rows_by_row_criteria(matrix m, float (*criteria)(int *, int)) {
     int *values = (int *) malloc(sizeof(int) * m.nRows);
 
     for (int i = 0; i < m.nRows; i++) {

@@ -60,6 +60,14 @@ int test_for_exercise_8(){
     matrix_free_mem(&m1);
 }
 
+int test_for_exercise_9(){
+    matrix m = matrix_get_mem(3, 3);
+    matrix_input(&m);
+    exercise_8(m);
+    matrix_output(m);
+    matrix_free_mem(&m);
+}
+
 int test_for_exercise_10(){
     matrix m = matrix_get_mem(3, 3);
     matrix_input(&m);
