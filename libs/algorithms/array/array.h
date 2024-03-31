@@ -78,4 +78,10 @@ int array_count_unique_element(int *a, int n);
 
 //Возвращает количество value в массиве
 int array_count_values(const int *a, int n, int value);
+
+//Возвращает максимум
+int array_get_max(int *a, int n);
+
+//Возвращает минимум
+int array_get_min(int *a, int n);
 #endif

@@ -172,3 +172,21 @@ int array_count_values(const int *a, int n, int value) {
     }
     return amount;
 }
+
+int array_get_max(int *a, int n) {
+    int max = a[0];
+    for (int i = 0; i < n; i++) {
+        if (max < a[i])
+            max = a[i];
+    }
+    return max;
+}
+
+int array_get_min(int *a, int n) {
+    int min = a[0];
+    for (int i = 0; i < n; i++) {
+        if (min > a[i])
+            min = a[i];
+    }
+    return min;
+}

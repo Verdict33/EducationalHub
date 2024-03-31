@@ -8,36 +8,14 @@ void exercise_1(matrix m){
 
 
 
-int getMax(int *a, int n){
-    int max = a[0];
-
-    for (int i = 0; i < n; ++i) {
-        if (max < a[i])
-            max = a[i];
-    }
-
-    return max;
-}
-
 void exercise_2(matrix m){
-    matrix_insertion_sort_rows_by_row_criteria(m, getMax);
+    matrix_insertion_sort_rows_by_row_criteria(m, array_get_max);
 }
 
 
-
-int getMin(int *a, int n){
-    int min = a[0];
-
-    for (int i = 0; i < n; ++i) {
-        if (min > a[i])
-            min = a[i];
-    }
-
-    return min;
-}
 
 void exercise_3(matrix m){
-    matrix_selection_sort_cols_by_col_criteria(m, getMin);
+    matrix_selection_sort_cols_by_col_criteria(m, array_get_min);
 }
 
 
@@ -91,23 +69,17 @@ int exercise_6(matrix m1, matrix m2){
 
 
 
-void exercise_7(matrix m){
-
-}
-
-
-
 int exercise_8(matrix m) {
     position max = matrix_get_max_value_pos(m);
     int min = INT_MAX;
 
     for (int i = 0; i <= max.rowIndex; ++i) {
         int colum_off = (max.rowIndex - i) << 1;
-        int column_on_start = MAX(0, max.colIndex - colum_off);
-        int column_on_end = MIN((m.nCols - 1), max.colIndex + colum_off);
+        int column_on_start = array_get_max(0, max.colIndex - colum_off);
+        int column_on_end = array_get_min((&m.nCols - 1), max.colIndex + colum_off);
 
         for (int j = column_on_start; j < column_on_end; ++j) {
-            min = MIN(min, m.values[i][j]);
+            min = array_get_min(&min, m.values[i][j]);
         }
     }
     return min;
@@ -115,8 +87,16 @@ int exercise_8(matrix m) {
 
 
 
-void exercise_9(matrix m){
+float getDistance(int *a, int n) {
+    float sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += (float) (a[i] * a[i]);
+    }
+    return sqrtf(sum);
+}
 
+void exercise_9(matrix m){
+    matrix_insertion_sort_rows_by_row_criteria(m, getDistance)
 }
 
 
@@ -141,10 +121,6 @@ int exercise_10(matrix m){
 }
 
 
-
-int getNSpecialElement(matrix m){
-
-}
 
 int exercise_11(matrix m){
     int n_element = 0;
@@ -225,7 +201,7 @@ void exercise_14(matrix *m, int nMatrices){
     for (int i = 0; i < nMatrices; i++) {
         int amount = countZeroRows(m[i]);
         n_zero_row[i] = amount;
-        max = MAX(max, amount);
+        max = array_get_max(&max, amount);
     }
 
     for (int i = 0; i < nMatrices; i++) {
@@ -237,56 +213,31 @@ void exercise_14(matrix *m, int nMatrices){
 
 
 
-void exercise_15(matrix m){
+int getMatrixNorm(matrix m) {
+    int max = 0;
 
+    for (int i = 0; i < m.nRows; i++) {
+        int *row = m.values[i];
+
+        for (int j = 0; j < m.nCols; j++) {
+            max = array_get_max(&max, abs(row[j]));
+        }
+    }
+    return max;
 }
 
+void exercise_15(matrix *m, int nMatrices){
+    int matrix_norm[nMatrices];
 
+    for (int i = 0; i < nMatrices; i++) {
+        matrix_norm[i] = getMatrixNorm(m[i]);
+    }
 
-int min2(int a, int b){
+    int min_norm = array_get_min(matrix_norm, nMatrices);
 
-}
-
-int getNSpecialElement2(matrix m){
-
-}
-
-void exercise_16(matrix m){
-
-}
-
-
-
-double getScalarProduct(int *a, int *b, int n){
-
-}
-
-double getVectorLength(int *a, int n){
-
-}
-
-double getCosine(int *a, int *b, int n){
-
-}
-
-int getVectorIndexWithMaxAngle(matrix m, int *b){
-
-}
-
-void exercise_17(matrix m){
-
-}
-
-
-
-long long getScalarProductRowAndCol(matrix m, int i, int j){
-
-}
-
-long long getSpecialScalarProduct(matrix m, int n){
-
-}
-
-void exercise_18(matrix m){
-
+    for (int i = 0; i < nMatrices; i++) {
+        if (matrix_norm[i] == min_norm) {
+            matrix_output(m[i]);
+        }
+    }
 }

@@ -33,3 +33,6 @@ int test_for_exercise_13();
 
 //Тест для задания 14
 int test_for_exercise_14();
+
+//Тест для задания 15
+int test_for_exercise_15();
