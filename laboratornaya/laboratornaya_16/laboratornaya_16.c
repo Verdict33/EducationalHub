@@ -1,5 +1,5 @@
 #include "laboratornaya_16.h"
-#include "../../libs/algorithms/array/array.h"
+
 void exercise_1(matrix m){
     position min = matrix_get_min_value_pos(m);
     position max = matrix_get_max_value_pos(m);
@@ -144,20 +144,23 @@ void exercise_9(matrix m){
 
 
 
-int cmp_long_long(const void *pa, const void *pb){
+int exercise_10(matrix m){
+    int sum = 0;
+    int a[m.nRows];
 
-}
+    for(int i = 0; i < m.nRows; i++){
+        for(int j = 0; j < m.nCols; j++)
+            sum += m.values[i][j];
 
-int countNUnique(long long *a, int n){
+        a[i] = sum;
+        sum = 0;
+    }
 
-}
+    bubbleSort(a, m.nRows);
 
-int countEqClassesByRowsSum(matrix m){
+    int equal_class = array_count_unique_element(a, m.nRows);;
 
-}
-
-void exercise_10(matrix m){
-
+    return equal_class;
 }
 
 

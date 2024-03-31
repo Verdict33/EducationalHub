@@ -59,3 +59,10 @@ int test_for_exercise_8(){
     printf("%d", exercise_8(m1));
     matrix_free_mem(&m1);
 }
+
+int test_for_exercise_10(){
+    matrix m = matrix_get_mem(3, 3);
+    matrix_input(&m);
+    printf("%d", exercise_10(m));
+    matrix_free_mem(&m);
+}

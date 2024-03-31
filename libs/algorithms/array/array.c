@@ -140,3 +140,25 @@ bool array_elements_areUnigue(int *a, int n){
     }
     return 1;
 }
+
+int array_count_unique_element(int *a, int n){
+    int unique_element = 0;
+    int is_start = 0;
+    int is_end = 0;
+
+    for (int i = 1; i < n - 1; ++i) {
+        if(a[i] != a[i + 1] && a[i] != a[i - 1])
+            unique_element++;
+
+        if(is_start == 0 && a[0] != a[1]){
+            unique_element++;
+            is_start = 1;
+        }
+
+        if(is_end == 0 && a[n-1] != a[n]){
+            unique_element++;
+            is_end = 1;
+        }
+    }
+    return unique_element;
+}

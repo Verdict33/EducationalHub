@@ -70,6 +70,9 @@ void array_deleteIf(int *a, size_t *n, int (*deletePredicate )(int));
 // отрицательное если второе число больше первого и вернёт 0 если они равны
 int array_compare_ints(const void *a, const void *b);
 
-//
+// Если все элементы массива уникальны выводит 1, иначе 0
 bool array_elements_areUnigue(int *a, int n);
+
+//Выводит количество уникальных элементов в массиве
+int array_count_unique_element(int *a, int n);
 #endif

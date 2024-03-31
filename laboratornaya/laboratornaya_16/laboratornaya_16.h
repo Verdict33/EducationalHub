@@ -1,4 +1,6 @@
 #include "../../libs/data_structures/matrix/matrix.h"
+#include "../../libs/algorithms/sorting/sorting.h"
+#include "../../libs/algorithms/array/array.h"
 #define MIN(i, j) (((i) < (j)) ? (i) : (j))
 #define MAX(i, j) (((i) > (j)) ? (i) : (j))
 
@@ -80,13 +82,8 @@ void exercise_9(matrix m);
 /*
  10. Определить количество классов эквивалентных строк данной прямоугольной
 матрицы. Строки считать эквивалентными, если равны суммы их элементов
-
- Дополнительные функции:
- (a) int cmp_long_long(const void *pa, const void *pb)
- (b) int countNUnique(long long *a, int n)
- (c) int countEqClassesByRowsSum(matrix m)
  */
-void exercise_10(matrix m);
+int exercise_10(matrix m);
 
 
 /*

@@ -19,6 +19,7 @@ CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj: C
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/limits.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
@@ -30,6 +31,7 @@ CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj: C
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Admin/CLionProjects/poligon/libs/algorithms/array/array.h \
+  C:/Users/Admin/CLionProjects/poligon/libs/algorithms/sorting/sorting.h \
   C:/Users/Admin/CLionProjects/poligon/libs/data_structures/matrix/matrix.h \
   C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_16/laboratornaya_16.h
 
@@ -49,6 +51,7 @@ CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj: C:
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/limits.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
@@ -60,6 +63,7 @@ CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj: C:
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_16/laboratornaya_16.h \
   C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ laboratornaya_16.h \
+  C:/Users/Admin/CLionProjects/poligon/libs/algorithms/sorting/sorting.h \
   C:/Users/Admin/CLionProjects/poligon/libs/data_structures/matrix/matrix.h
 
 CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj: C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ matrix.c \
@@ -187,6 +191,7 @@ CMakeFiles/untitled.dir/main.c.obj: C:/Users/Admin/CLionProjects/poligon/main.c 
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/limits.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
@@ -196,6 +201,7 @@ CMakeFiles/untitled.dir/main.c.obj: C:/Users/Admin/CLionProjects/poligon/main.c 
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/string.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/Admin/CLionProjects/poligon/libs/algorithms/sorting/sorting.h \
   C:/Users/Admin/CLionProjects/poligon/libs/data_structures/matrix/matrix.h \
   C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_16/laboratornaya_16.h
 
@@ -254,6 +260,8 @@ C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
 
+C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h:
+
 C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ vector.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
@@ -275,6 +283,8 @@ C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ laboratorna
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h:
 
 C:/Users/Admin/CLionProjects/poligon/libs/algorithms/array/array.h:
+
+C:/Users/Admin/CLionProjects/poligon/libs/algorithms/sorting/sorting.h:
 
 C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ vector.c:
 
