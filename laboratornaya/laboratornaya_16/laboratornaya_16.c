@@ -169,8 +169,30 @@ int getNSpecialElement(matrix m){
 
 }
 
-void exercise_11(matrix m){
+int exercise_11(matrix m){
+    int n_element = 0;
 
+    for(int i = 0; i < m.nCols; i++){
+        int a[m.nRows];
+
+        for(int j = 0; j < m.nRows; j++){
+            a[j] = m.values[j][i];
+        }
+
+        int max = a[0];
+        int sum = a[0];
+
+        for(int j = 1; j < m.nRows; j++){
+            if(a[j] > max)
+                max = a[j];
+
+            sum += a[j];
+        }
+
+        if(sum - max < max)
+            n_element++;
+    }
+    return n_element;
 }
 
 
@@ -184,7 +206,11 @@ void swapPenultimateRow(matrix m, int n){
 }
 
 void exercise_12(matrix m){
+    position min = matrix_get_min_value_pos(m);
 
+    for(int i = m.nCols - 1; i >= 0; --i){
+        m.values[m.nRows - 2][i] = m.values[i][min.rowIndex];
+    }
 }
 
 

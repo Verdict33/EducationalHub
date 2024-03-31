@@ -66,3 +66,18 @@ int test_for_exercise_10(){
     printf("%d", exercise_10(m));
     matrix_free_mem(&m);
 }
+
+int test_for_exercise_11(){
+    matrix m = matrix_get_mem(3, 3);
+    matrix_input(&m);
+    printf("%d", exercise_11(m));
+    matrix_free_mem(&m);
+}
+
+int test_for_exercise_12(){
+    matrix m = matrix_get_mem(3, 3);
+    matrix_input(&m);
+    exercise_12(m);
+    matrix_output(m);
+    matrix_free_mem(&m);
+}
