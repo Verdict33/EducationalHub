@@ -91,23 +91,11 @@ int exercise_6(matrix m1, matrix m2){
 
 
 
-int max(int a, int b){
-
-}
-
-long long findSumOfMaxesOfPseudoDiagonal(matrix m){
-
-}
-
 void exercise_7(matrix m){
 
 }
 
 
-
-int getMinInArea(matrix m){
-
-}
 
 int exercise_8(matrix m) {
     position max = matrix_get_max_value_pos(m);
@@ -126,17 +114,6 @@ int exercise_8(matrix m) {
 }
 
 
-float getDistance(int *a, int n){
-
-}
-
-void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)){
-
-}
-
-void sortByDistances(matrix m){
-
-}
 
 void exercise_9(matrix m){
 
@@ -231,9 +208,30 @@ int exercise_13(matrix *m, int nMatrices){
 
 
 
-void exercise_14(matrix *m, int nMatrices){
-    for(int c = 0; c < nMatrices; c++){
+int countZeroRows(matrix m) {
+    int amount = 0;
+    for (int i = 0; i < m.nRows; i++) {
+        if (array_count_values(m.values[i], m.nCols, 0) == m.nCols) {
+            amount++;
+        }
+    }
+    return amount;
+}
 
+void exercise_14(matrix *m, int nMatrices){
+    int max = 0;
+    int n_zero_row[nMatrices];
+
+    for (int i = 0; i < nMatrices; i++) {
+        int amount = countZeroRows(m[i]);
+        n_zero_row[i] = amount;
+        max = MAX(max, amount);
+    }
+
+    for (int i = 0; i < nMatrices; i++) {
+        if (n_zero_row[i] == max) {
+            matrix_output(m[i]);
+        }
     }
 }
 

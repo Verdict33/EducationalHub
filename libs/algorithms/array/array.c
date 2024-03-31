@@ -162,3 +162,13 @@ int array_count_unique_element(int *a, int n){
     }
     return unique_element;
 }
+
+int array_count_values(const int *a, int n, int value) {
+    int amount = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] == value) {
+            amount++;
+        }
+    }
+    return amount;
+}
