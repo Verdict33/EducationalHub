@@ -96,34 +96,21 @@ int exercise_11(matrix m);
 /*
  12. Дана квадратная матрица. Заменить предпоследнюю строку матрицы первым
 из столбцов, в котором находится минимальный элемент матрицы.
-
- Дополнительные функции:
- (a) position getLeftMin(matrix m)
- (b) void swapPenultimateRow(matrix m, int n)
  */
 void exercise_12(matrix m);
 
 
 /*
- 13. Дан массив матриц одного размера. Определить число матриц, строки которых упорядочены по неубыванию элементов
-
- Дополнительные функции:
- (a) bool isNonDescendingSorted(int *a, int n)
- (b) bool hasAllNonDescendingRows(matrix m)
- (c) int countNonDescendingRowsMatrices(matrix *ms, int nMatrix)
+ 13. Дан массив матриц одного размера. Определить число матриц, строки
+ которых упорядочены по неубыванию элементов
  */
-void exercise_13(matrix m);
+int exercise_13(matrix *m, int nMatrices);
 
 
 /*
  14. Дан массив целочисленных матриц. Вывести матрицы, имеющие наибольшее число нулевых строк
-
- Дополнительные функции:
- (a) int countValues(const int *a, int n, int value)
- (b) int countZeroRows(matrix m)
- (c) void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix)
  */
-void exercise_14(matrix m);
+void exercise_14(matrix *m, int nMatrices);
 
 
 /*

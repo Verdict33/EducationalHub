@@ -81,3 +81,10 @@ int test_for_exercise_12(){
     matrix_output(m);
     matrix_free_mem(&m);
 }
+
+int test_for_exercise_13(){
+    matrix *m = matrices_get_mem_array(2, 3, 3);
+    matrices_input(m, 2);
+    printf("%d", exercise_13(m, 2));
+    matrices_free_mem(m, 2);
+}

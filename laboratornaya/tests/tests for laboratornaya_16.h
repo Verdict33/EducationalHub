@@ -27,3 +27,6 @@ int test_for_exercise_11();
 
 //Тест для задания 12
 int test_for_exercise_12();
+
+//Тест для задания 13
+int test_for_exercise_13();

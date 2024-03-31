@@ -197,14 +197,6 @@ int exercise_11(matrix m){
 
 
 
-position getLeftMin(matrix m){
-
-}
-
-void swapPenultimateRow(matrix m, int n){
-
-}
-
 void exercise_12(matrix m){
     position min = matrix_get_min_value_pos(m);
 
@@ -215,38 +207,34 @@ void exercise_12(matrix m){
 
 
 
-bool isNonDescendingSorted(int *a, int n){
+int exercise_13(matrix *m, int nMatrices){
+    int n_matrices = 0;
 
+    for(int c = 0; c < nMatrices; c++){
+        int is_sorted = 1;
+
+        for(int i = 0; i < m->nRows; i++){
+            for(int j = 0; j < m->nCols - 1; j++){
+
+                if(m[c].values[i][j] > m[c].values[i][j + 1]){
+                    is_sorted = 0;
+                    goto br;
+                }
+            }
+            br:
+        }
+        if(is_sorted)
+            n_matrices++;
+    }
+    return n_matrices;
 }
 
-bool hasAllNonDescendingRows(matrix m){
-
-}
-
-int countNonDescendingRowsMatrices(matrix *ms, int nMatrix){
-
-}
-
-void exercise_13(matrix m){
-
-}
 
 
+void exercise_14(matrix *m, int nMatrices){
+    for(int c = 0; c < nMatrices; c++){
 
-int countValues(const int *a, int n, int value){
-
-}
-
-int countZeroRows(matrix m){
-
-}
-
-void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix){
-
-}
-
-void exercise_14(matrix m){
-
+    }
 }
 
 
