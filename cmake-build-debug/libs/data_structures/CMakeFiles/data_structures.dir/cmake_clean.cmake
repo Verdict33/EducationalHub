@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_structures.dir/matrix/matrix.c.obj.d"
   "CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj"
   "CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj.d"
+  "CMakeFiles/data_structures.dir/string/string.c.obj"
+  "CMakeFiles/data_structures.dir/string/string.c.obj.d"
   "CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj"
   "CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj.d"
   "CMakeFiles/data_structures.dir/vector/vector.c.obj"

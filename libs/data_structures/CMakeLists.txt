@@ -10,4 +10,6 @@ add_library(data_structures
         vector/vectorVoid.h
         matrix/matrix.c
         matrix/matrix.h
+        string/string.h
+        string/string.c
 )
