@@ -14,19 +14,31 @@ char* string_find(char *begin, char *end, int ch){
 }
 
 char* string_find_non_space(char *begin){
+    while (begin != '/0' && isspace(*begin))
+        begin++;
 
+    return begin;
 }
 
 char* string_find_space(char *begin){
+    while (begin != '/0' && !isspace(*begin))
+        begin++;
 
+    return begin;
 }
 
 char* string_find_non_space_reverse(char *rbegin, const char *rend){
+    while(rbegin != rend && isspace(*rbegin))
+        rbegin--;
 
+    return rbegin;
 }
 
 char* string_find_space_reverse(char *rbegin, const char *rend){
+    while(rbegin != rend && !isspace(*rbegin))
+        rbegin--;
 
+    return rbegin;
 }
 
 int string_strcmp(const char *lhs, const char *rhs){
