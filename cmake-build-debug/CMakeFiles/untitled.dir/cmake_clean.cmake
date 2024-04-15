@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj.d"
   "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj"
   "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj.d"
+  "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.obj"
+  "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.obj.d"
   "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_vector.c.obj"
   "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_vector.c.obj.d"
   "CMakeFiles/untitled.dir/libs/algorithms/algorithm.c.obj"

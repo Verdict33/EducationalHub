@@ -226,6 +226,30 @@ laboratornaya/tests/tests_for_matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.s
 .PHONY : laboratornaya/tests/tests_for_matrix.c.s
 
+laboratornaya/tests/tests_for_string.obj: laboratornaya/tests/tests_for_string.c.obj
+.PHONY : laboratornaya/tests/tests_for_string.obj
+
+# target to build an object file
+laboratornaya/tests/tests_for_string.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.obj
+.PHONY : laboratornaya/tests/tests_for_string.c.obj
+
+laboratornaya/tests/tests_for_string.i: laboratornaya/tests/tests_for_string.c.i
+.PHONY : laboratornaya/tests/tests_for_string.i
+
+# target to preprocess a source file
+laboratornaya/tests/tests_for_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.i
+.PHONY : laboratornaya/tests/tests_for_string.c.i
+
+laboratornaya/tests/tests_for_string.s: laboratornaya/tests/tests_for_string.c.s
+.PHONY : laboratornaya/tests/tests_for_string.s
+
+# target to generate assembly for a file
+laboratornaya/tests/tests_for_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.s
+.PHONY : laboratornaya/tests/tests_for_string.c.s
+
 laboratornaya/tests/tests_for_vector.obj: laboratornaya/tests/tests_for_vector.c.obj
 .PHONY : laboratornaya/tests/tests_for_vector.obj
 
@@ -366,6 +390,9 @@ help:
 	@echo ... laboratornaya/tests/tests_for_matrix.obj
 	@echo ... laboratornaya/tests/tests_for_matrix.i
 	@echo ... laboratornaya/tests/tests_for_matrix.s
+	@echo ... laboratornaya/tests/tests_for_string.obj
+	@echo ... laboratornaya/tests/tests_for_string.i
+	@echo ... laboratornaya/tests/tests_for_string.s
 	@echo ... laboratornaya/tests/tests_for_vector.obj
 	@echo ... laboratornaya/tests/tests_for_vector.i
 	@echo ... laboratornaya/tests/tests_for_vector.s

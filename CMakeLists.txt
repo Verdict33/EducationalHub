@@ -17,6 +17,8 @@ add_executable(untitled "laboratornaya/tests/tests for vector.c"
         "laboratornaya/tests/tests for laboratornaya_16.h"
         "laboratornaya/tests/tests for matrix.h"
         "laboratornaya/tests/tests for vector.h"
+        "laboratornaya/tests/tests for string.c"
+        "laboratornaya/tests/tests for string.h"
 )
 
 add_subdirectory(libs)
