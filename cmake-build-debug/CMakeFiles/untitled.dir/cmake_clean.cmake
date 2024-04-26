@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj"
+  "CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj.d"
   "CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj"
   "CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj.d"
   "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj"

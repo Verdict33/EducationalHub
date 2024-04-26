@@ -152,6 +152,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/Discretka/func_for_mnogestva.c">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_16/laboratornaya_16.c">
 			<Option target="untitled"/>
 		</Unit>

@@ -154,6 +154,30 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
+laboratornaya/Discretka/func_for_mnogestva.obj: laboratornaya/Discretka/func_for_mnogestva.c.obj
+.PHONY : laboratornaya/Discretka/func_for_mnogestva.obj
+
+# target to build an object file
+laboratornaya/Discretka/func_for_mnogestva.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj
+.PHONY : laboratornaya/Discretka/func_for_mnogestva.c.obj
+
+laboratornaya/Discretka/func_for_mnogestva.i: laboratornaya/Discretka/func_for_mnogestva.c.i
+.PHONY : laboratornaya/Discretka/func_for_mnogestva.i
+
+# target to preprocess a source file
+laboratornaya/Discretka/func_for_mnogestva.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.i
+.PHONY : laboratornaya/Discretka/func_for_mnogestva.c.i
+
+laboratornaya/Discretka/func_for_mnogestva.s: laboratornaya/Discretka/func_for_mnogestva.c.s
+.PHONY : laboratornaya/Discretka/func_for_mnogestva.s
+
+# target to generate assembly for a file
+laboratornaya/Discretka/func_for_mnogestva.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.s
+.PHONY : laboratornaya/Discretka/func_for_mnogestva.c.s
+
 laboratornaya/laboratornaya_16/laboratornaya_16.obj: laboratornaya/laboratornaya_16/laboratornaya_16.c.obj
 .PHONY : laboratornaya/laboratornaya_16/laboratornaya_16.obj
 
@@ -381,6 +405,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... untitled
+	@echo ... laboratornaya/Discretka/func_for_mnogestva.obj
+	@echo ... laboratornaya/Discretka/func_for_mnogestva.i
+	@echo ... laboratornaya/Discretka/func_for_mnogestva.s
 	@echo ... laboratornaya/laboratornaya_16/laboratornaya_16.obj
 	@echo ... laboratornaya/laboratornaya_16/laboratornaya_16.i
 	@echo ... laboratornaya/laboratornaya_16/laboratornaya_16.s

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Admin/CLionProjects/poligon/laboratornaya/Discretka/func_for_mnogestva.c" "CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj" "gcc" "CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj.d"
   "C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_16/laboratornaya_16.c" "CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj" "gcc" "CMakeFiles/untitled.dir/laboratornaya/laboratornaya_16/laboratornaya_16.c.obj.d"
   "C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for laboratornaya_16.c" "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj" "gcc" "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_16.c.obj.d"
   "C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for matrix.c" "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj" "gcc" "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj.d"
