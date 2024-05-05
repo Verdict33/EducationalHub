@@ -20,6 +20,8 @@ add_executable(untitled "laboratornaya/tests/tests for vector.c"
         "laboratornaya/tests/tests for string.c"
         "laboratornaya/tests/tests for string.h"
         laboratornaya/Discretka/func_for_mnogestva.c
+        laboratornaya/labornatornaya_18/labornatornaya_18.c
+        laboratornaya/labornatornaya_18/labornatornaya_18.h
 )
 
 add_subdirectory(libs)
