@@ -208,19 +208,33 @@ CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Admin\CLionProjects\poligon\laboratornaya\Discretka\func_for_mnogestva.c -o CMakeFiles\untitled.dir\laboratornaya\Discretka\func_for_mnogestva.c.s
 
-CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj: C:/Users/Admin/CLionProjects/poligon/laboratornaya/labornatornaya_18/labornatornaya_18.c
-CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj: CMakeFiles/untitled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\CLionProjects\poligon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj -MF CMakeFiles\untitled.dir\laboratornaya\labornatornaya_18\labornatornaya_18.c.obj.d -o CMakeFiles\untitled.dir\laboratornaya\labornatornaya_18\labornatornaya_18.c.obj -c C:\Users\Admin\CLionProjects\poligon\laboratornaya\labornatornaya_18\labornatornaya_18.c
+CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj: C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_18/laboratornaya_18.c
+CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\CLionProjects\poligon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj -MF CMakeFiles\untitled.dir\laboratornaya\laboratornaya_18\laboratornaya_18.c.obj.d -o CMakeFiles\untitled.dir\laboratornaya\laboratornaya_18\laboratornaya_18.c.obj -c C:\Users\Admin\CLionProjects\poligon\laboratornaya\laboratornaya_18\laboratornaya_18.c
 
-CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Admin\CLionProjects\poligon\laboratornaya\labornatornaya_18\labornatornaya_18.c > CMakeFiles\untitled.dir\laboratornaya\labornatornaya_18\labornatornaya_18.c.i
+CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Admin\CLionProjects\poligon\laboratornaya\laboratornaya_18\laboratornaya_18.c > CMakeFiles\untitled.dir\laboratornaya\laboratornaya_18\laboratornaya_18.c.i
 
-CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Admin\CLionProjects\poligon\laboratornaya\labornatornaya_18\labornatornaya_18.c -o CMakeFiles\untitled.dir\laboratornaya\labornatornaya_18\labornatornaya_18.c.s
+CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Admin\CLionProjects\poligon\laboratornaya\laboratornaya_18\laboratornaya_18.c -o CMakeFiles\untitled.dir\laboratornaya\laboratornaya_18\laboratornaya_18.c.s
+
+CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj: C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ laboratornaya_18.c
+CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\CLionProjects\poligon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj -MF CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_laboratornaya_18.c.obj.d -o CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_laboratornaya_18.c.obj -c "C:\Users\Admin\CLionProjects\poligon\laboratornaya\tests\tests for laboratornaya_18.c"
+
+CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Admin\CLionProjects\poligon\laboratornaya\tests\tests for laboratornaya_18.c" > CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_laboratornaya_18.c.i
+
+CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Admin\CLionProjects\poligon\laboratornaya\tests\tests for laboratornaya_18.c" -o CMakeFiles\untitled.dir\laboratornaya\tests\tests_for_laboratornaya_18.c.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
@@ -234,7 +248,8 @@ untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj" \
 "CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.obj" \
 "CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj" \
-"CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj"
+"CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj" \
+"CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -249,14 +264,15 @@ untitled.exe: CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornay
 untitled.exe: CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_matrix.c.obj
 untitled.exe: CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_string.c.obj
 untitled.exe: CMakeFiles/untitled.dir/laboratornaya/Discretka/func_for_mnogestva.c.obj
-untitled.exe: CMakeFiles/untitled.dir/laboratornaya/labornatornaya_18/labornatornaya_18.c.obj
+untitled.exe: CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.obj
+untitled.exe: CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj
 untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: libs/algorithms/libalgorithms.a
 untitled.exe: libs/data_structures/libdata_structures.a
 untitled.exe: CMakeFiles/untitled.dir/linkLibs.rsp
 untitled.exe: CMakeFiles/untitled.dir/objects1.rsp
 untitled.exe: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Admin\CLionProjects\poligon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable untitled.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Admin\CLionProjects\poligon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable untitled.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

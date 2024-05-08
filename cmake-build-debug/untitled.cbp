@@ -161,16 +161,22 @@
 		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_16/laboratornaya_16.h">
 			<Option target="algorithms"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/labornatornaya_18/labornatornaya_18.c">
+		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_18/laboratornaya_18.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/labornatornaya_18/labornatornaya_18.h">
+		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_18/laboratornaya_18.h">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for laboratornaya_16.c">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for laboratornaya_16.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for laboratornaya_18.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for laboratornaya_18.h">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests for matrix.c">

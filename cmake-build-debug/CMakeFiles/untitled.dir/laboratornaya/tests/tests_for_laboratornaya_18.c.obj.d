@@ -1,5 +1,7 @@
-CMakeFiles/untitled.dir/main.c.obj: \
- C:\Users\Admin\CLionProjects\poligon\main.c \
+CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj: \
+ C:\Users\Admin\CLionProjects\poligon\laboratornaya\tests\tests\ for\ laboratornaya_18.c \
+ C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_18/laboratornaya_18.h \
+ C:/Users/Admin/CLionProjects/poligon/libs/data_structures/string/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -11,8 +13,6 @@ CMakeFiles/untitled.dir/main.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:\Users\Admin\CLionProjects\poligon\laboratornaya/laboratornaya_18/laboratornaya_18.h \
- C:/Users/Admin/CLionProjects/poligon/libs/data_structures/string/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h \
@@ -26,4 +26,4 @@ CMakeFiles/untitled.dir/main.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
- C:\Users\Admin\CLionProjects\poligon\libs/data_structures/string/string.h
+ C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ laboratornaya_18.h

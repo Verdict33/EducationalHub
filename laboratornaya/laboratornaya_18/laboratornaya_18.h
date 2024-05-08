@@ -40,10 +40,5 @@ void outputWordsInReverseOrder(char* string);
 // Определяет количество слов полиндромов в данной строке
 int numbers_palindromes(char* string);
 
-//Выводит слово данной строки, предшествующее первому из слов, содержащих букву symbol
-WordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithSymbol(char* string, WordDescriptor* word, char symbol);
-
-//
-bool findLastEqualWordInBothStr(char* string, char* word, WordDescriptor* lastWord);
-
-//
+// Переворачивает порядок слов в строке
+void reverse_words_order(char* string);
