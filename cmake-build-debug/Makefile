@@ -226,6 +226,30 @@ laboratornaya/laboratornaya_18/laboratornaya_18.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/laboratornaya_18/laboratornaya_18.c.s
 .PHONY : laboratornaya/laboratornaya_18/laboratornaya_18.c.s
 
+laboratornaya/laboratornaya_19/laboratornaya_19.obj: laboratornaya/laboratornaya_19/laboratornaya_19.c.obj
+.PHONY : laboratornaya/laboratornaya_19/laboratornaya_19.obj
+
+# target to build an object file
+laboratornaya/laboratornaya_19/laboratornaya_19.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/laboratornaya_19/laboratornaya_19.c.obj
+.PHONY : laboratornaya/laboratornaya_19/laboratornaya_19.c.obj
+
+laboratornaya/laboratornaya_19/laboratornaya_19.i: laboratornaya/laboratornaya_19/laboratornaya_19.c.i
+.PHONY : laboratornaya/laboratornaya_19/laboratornaya_19.i
+
+# target to preprocess a source file
+laboratornaya/laboratornaya_19/laboratornaya_19.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/laboratornaya_19/laboratornaya_19.c.i
+.PHONY : laboratornaya/laboratornaya_19/laboratornaya_19.c.i
+
+laboratornaya/laboratornaya_19/laboratornaya_19.s: laboratornaya/laboratornaya_19/laboratornaya_19.c.s
+.PHONY : laboratornaya/laboratornaya_19/laboratornaya_19.s
+
+# target to generate assembly for a file
+laboratornaya/laboratornaya_19/laboratornaya_19.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/laboratornaya_19/laboratornaya_19.c.s
+.PHONY : laboratornaya/laboratornaya_19/laboratornaya_19.c.s
+
 laboratornaya/tests/tests_for_laboratornaya_16.obj: laboratornaya/tests/tests_for_laboratornaya_16.c.obj
 .PHONY : laboratornaya/tests/tests_for_laboratornaya_16.obj
 
@@ -273,6 +297,30 @@ laboratornaya/tests/tests_for_laboratornaya_18.s: laboratornaya/tests/tests_for_
 laboratornaya/tests/tests_for_laboratornaya_18.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.s
 .PHONY : laboratornaya/tests/tests_for_laboratornaya_18.c.s
+
+laboratornaya/tests/tests_for_laboratornaya_19.obj: laboratornaya/tests/tests_for_laboratornaya_19.c.obj
+.PHONY : laboratornaya/tests/tests_for_laboratornaya_19.obj
+
+# target to build an object file
+laboratornaya/tests/tests_for_laboratornaya_19.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_19.c.obj
+.PHONY : laboratornaya/tests/tests_for_laboratornaya_19.c.obj
+
+laboratornaya/tests/tests_for_laboratornaya_19.i: laboratornaya/tests/tests_for_laboratornaya_19.c.i
+.PHONY : laboratornaya/tests/tests_for_laboratornaya_19.i
+
+# target to preprocess a source file
+laboratornaya/tests/tests_for_laboratornaya_19.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_19.c.i
+.PHONY : laboratornaya/tests/tests_for_laboratornaya_19.c.i
+
+laboratornaya/tests/tests_for_laboratornaya_19.s: laboratornaya/tests/tests_for_laboratornaya_19.c.s
+.PHONY : laboratornaya/tests/tests_for_laboratornaya_19.s
+
+# target to generate assembly for a file
+laboratornaya/tests/tests_for_laboratornaya_19.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_19.c.s
+.PHONY : laboratornaya/tests/tests_for_laboratornaya_19.c.s
 
 laboratornaya/tests/tests_for_matrix.obj: laboratornaya/tests/tests_for_matrix.c.obj
 .PHONY : laboratornaya/tests/tests_for_matrix.obj
@@ -462,12 +510,18 @@ help:
 	@echo ... laboratornaya/laboratornaya_18/laboratornaya_18.obj
 	@echo ... laboratornaya/laboratornaya_18/laboratornaya_18.i
 	@echo ... laboratornaya/laboratornaya_18/laboratornaya_18.s
+	@echo ... laboratornaya/laboratornaya_19/laboratornaya_19.obj
+	@echo ... laboratornaya/laboratornaya_19/laboratornaya_19.i
+	@echo ... laboratornaya/laboratornaya_19/laboratornaya_19.s
 	@echo ... laboratornaya/tests/tests_for_laboratornaya_16.obj
 	@echo ... laboratornaya/tests/tests_for_laboratornaya_16.i
 	@echo ... laboratornaya/tests/tests_for_laboratornaya_16.s
 	@echo ... laboratornaya/tests/tests_for_laboratornaya_18.obj
 	@echo ... laboratornaya/tests/tests_for_laboratornaya_18.i
 	@echo ... laboratornaya/tests/tests_for_laboratornaya_18.s
+	@echo ... laboratornaya/tests/tests_for_laboratornaya_19.obj
+	@echo ... laboratornaya/tests/tests_for_laboratornaya_19.i
+	@echo ... laboratornaya/tests/tests_for_laboratornaya_19.s
 	@echo ... laboratornaya/tests/tests_for_matrix.obj
 	@echo ... laboratornaya/tests/tests_for_matrix.i
 	@echo ... laboratornaya/tests/tests_for_matrix.s

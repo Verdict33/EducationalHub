@@ -99,3 +99,9 @@ int* vector_back(vector *v){
 int* vector_front(vector *v){
     return &v->data[0];
 }
+
+int vector_output(vector v){
+    for (int i = 0; i < v.size; ++i) {
+        printf("%d ", v.data[i]);
+    }
+}

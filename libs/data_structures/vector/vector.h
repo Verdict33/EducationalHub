@@ -47,3 +47,6 @@ int* vector_back(vector *v);
 
 // Возвращает указатель на нулевой элемент вектора
 int* vector_front(vector *v);
+
+// Выводит вектор на экран
+int vector_output(vector v);

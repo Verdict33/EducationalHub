@@ -24,6 +24,10 @@ add_executable(untitled "laboratornaya/tests/tests for vector.c"
         laboratornaya/laboratornaya_18/laboratornaya_18.h
         "laboratornaya/tests/tests for laboratornaya_18.h"
         "laboratornaya/tests/tests for laboratornaya_18.c"
+        laboratornaya/laboratornaya_19/laboratornaya_19.c
+        laboratornaya/laboratornaya_19/laboratornaya_19.h
+        "laboratornaya/tests/tests for laboratornaya_19.c"
+        "laboratornaya/tests/tests for laboratornaya_19.h"
 )
 
 add_subdirectory(libs)
