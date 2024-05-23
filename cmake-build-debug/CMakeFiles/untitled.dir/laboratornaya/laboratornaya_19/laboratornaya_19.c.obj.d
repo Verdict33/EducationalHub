@@ -1,7 +1,6 @@
-CMakeFiles/untitled.dir/main.c.obj: \
- C:\Users\Admin\CLionProjects\poligon\main.c \
- C:\Users\Admin\CLionProjects\poligon\laboratornaya/tests/tests\ for\ laboratornaya_19.h \
- C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_19/laboratornaya_19.h \
+CMakeFiles/untitled.dir/laboratornaya/laboratornaya_19/laboratornaya_19.c.obj: \
+ C:\Users\Admin\CLionProjects\poligon\laboratornaya\laboratornaya_19\laboratornaya_19.c \
+ C:\Users\Admin\CLionProjects\poligon\laboratornaya\laboratornaya_19\laboratornaya_19.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

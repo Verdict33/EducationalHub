@@ -1,5 +1,6 @@
 CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj: \
  C:\Users\Admin\CLionProjects\poligon\laboratornaya\tests\tests\ for\ laboratornaya_18.c \
+ C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ laboratornaya_18.h \
  C:/Users/Admin/CLionProjects/poligon/laboratornaya/laboratornaya_18/laboratornaya_18.h \
  C:/Users/Admin/CLionProjects/poligon/libs/data_structures/string/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
@@ -25,5 +26,4 @@ CMakeFiles/untitled.dir/laboratornaya/tests/tests_for_laboratornaya_18.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
- C:/Users/Admin/CLionProjects/poligon/laboratornaya/tests/tests\ for\ laboratornaya_18.h
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h

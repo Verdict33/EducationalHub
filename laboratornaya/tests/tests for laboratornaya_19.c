@@ -285,3 +285,172 @@ int test_for_task_5() {
     printf("Test passed\n");
     return 0;
 }
+
+// Задание 7
+
+void test_reorganization_numbers_only_negative_numbers() {
+    const char fname[] = "test.txt";
+
+    int x1 = -1;
+    int x2 = -2;
+    int x3 = -3;
+
+    FILE* file = fopen(fname, "wb");
+
+    fwrite(&x1, sizeof(int), 1, file);
+    fwrite(&x2, sizeof(int), 1, file);
+    fwrite(&x3, sizeof(int), 1, file);
+
+    fclose(file);
+
+    reorganization_numbers(fname);
+
+    file = fopen(fname, "rb");
+
+    int res_x1, res_x2, res_x3;
+    fread(&res_x1, sizeof(int), 1, file);
+    fread(&res_x2, sizeof(int), 1, file);
+    fread(&res_x3, sizeof(int), 1, file);
+
+    fclose(file);
+
+    assert(x1 == res_x1);
+    assert(x2 == res_x2);
+    assert(x3 == res_x3);
+}
+
+
+void test_reorganization_numbers_only_positive_numbers() {
+    const char fname[] = "test.txt";
+
+    int x1 = 1;
+    int x2 = 2;
+    int x3 = 3;
+
+    FILE* file = fopen(fname, "wb");
+
+    fwrite(&x1, sizeof(int), 1, file);
+    fwrite(&x2, sizeof(int), 1, file);
+    fwrite(&x3, sizeof(int), 1, file);
+
+    fclose(file);
+
+    reorganization_numbers(fname);
+
+    file = fopen(fname, "rb");
+
+    int res_x1, res_x2, res_x3;
+    fread(&res_x1, sizeof(int), 1, file);
+    fread(&res_x2, sizeof(int), 1, file);
+    fread(&res_x3, sizeof(int), 1, file);
+
+    fclose(file);
+
+    assert(x1 == res_x1);
+    assert(x2 == res_x2);
+    assert(x3 == res_x3);
+}
+
+
+void test_reorganization_numbers_mixed_numbers() {
+    const char fname[] = "test.txt";
+
+    int x1 = -1;
+    int x2 = 1;
+    int x3 = -3;
+    int x4 = 3;
+
+    FILE* file = fopen(fname, "wb");
+
+    fwrite(&x1, sizeof(int), 1, file);
+    fwrite(&x2, sizeof(int), 1, file);
+    fwrite(&x3, sizeof(int), 1, file);
+    fwrite(&x4, sizeof(int), 1, file);
+
+    fclose(file);
+
+    reorganization_numbers(fname);
+
+    file = fopen(fname, "rb");
+
+    int res_x1, res_x2, res_x3, res_x4;
+    fread(&res_x1, sizeof(int), 1, file);
+    fread(&res_x2, sizeof(int), 1, file);
+    fread(&res_x3, sizeof(int), 1, file);
+    fread(&res_x4, sizeof(int), 1, file);
+
+    fclose(file);
+
+    assert(res_x1 == x2);
+    assert(res_x2 == x4);
+    assert(res_x3 == x1);
+    assert(res_x4 == x3);
+}
+
+
+void test_for_task_7() {
+    test_reorganization_numbers_only_negative_numbers();
+    test_reorganization_numbers_only_positive_numbers();
+    test_reorganization_numbers_mixed_numbers();
+}
+
+// Задание 9
+
+
+void test_get_best_team_n_one() {
+    const char fname[] = "test.txt";
+
+    FILE* file = fopen(fname, "wb");
+
+    sportsman s1 = {.best_result = 8.1, .name="first"};
+    sportsman s2 = {.best_result = 7.2,  .name="second"};
+
+    fwrite(&s1, sizeof(sportsman), 1, file);
+    fwrite(&s2, sizeof(sportsman), 1, file);
+
+    fclose(file);
+
+    get_best_team(fname, 1);
+
+    file = fopen(fname, "rb");
+
+    sportsman res_s1;
+    fread(&res_s1, sizeof(sportsman), 1, file);
+
+    fclose(file);
+
+    assert(string_strcmp(s1.name, res_s1.name) == 0 && fabs(s1.best_result - res_s1.best_result) <= 0.001);
+}
+
+void test_get_best_team_n_more() {
+    const char fname[] = "test.txt";
+
+    FILE* file = fopen(fname, "wb");
+
+    sportsman s1 = {.best_result = 8.1, .name="first"};
+    sportsman s2 = {.best_result = 7.2,  .name="second"};
+
+    fwrite(&s1, sizeof(sportsman), 1, file);
+    fwrite(&s2, sizeof(sportsman), 1, file);
+
+    fclose(file);
+
+    get_best_team(fname, 2);
+
+    file = fopen(fname, "rb");
+
+    sportsman res_s1, res_s2;
+    fread(&res_s1, sizeof(sportsman), 1, file);
+    fread(&res_s2, sizeof(sportsman), 1, file);
+
+    fclose(file);
+
+    assert(string_strcmp(s1.name, res_s1.name) == 0 && fabs(s1.best_result - res_s1.best_result) <= 0.001);
+    assert(string_strcmp(s2.name, res_s2.name) == 0 && fabs(s2.best_result - res_s2.best_result) <= 0.001);
+}
+
+
+void test_for_task_9() {
+    test_get_best_team_n_one();
+    test_get_best_team_n_more();
+}

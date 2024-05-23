@@ -105,3 +105,99 @@ void output_longest_word(FILE* input_fname, FILE* output_fname) {
     }
 }
 
+void reorganization_numbers(const char* fname) {
+    vector positive_numbers = vector_create(2);
+    vector negative_numbers = vector_create(2);
+
+    FILE* file = fopen(fname, "rb");
+
+    if (file == NULL) {
+        printf("Error: Don`t read file\n");
+        exit(1);
+    }
+
+    int current_number;
+
+    while (fread(&current_number, sizeof(int), 1, file) == 1) {
+        if (current_number >= 0)
+            vector_pushBack(&positive_numbers, current_number);
+        else
+            vector_pushBack(&negative_numbers, current_number);
+    }
+
+    fclose(file);
+
+    file = fopen(fname, "wb");
+
+    if (file == NULL) {
+        printf("Error: Don`t read file\n");
+        exit(1);
+    }
+
+    for (int i = 0; i < positive_numbers.size; i++) {
+        fwrite(positive_numbers.data + i, sizeof(int), 1, file);
+    }
+
+    for (int i = 0; i < negative_numbers.size; i++) {
+        fwrite(negative_numbers.data + i, sizeof(int), 1, file);
+    }
+
+    vector_delete(&positive_numbers);
+    vector_delete(&negative_numbers);
+
+    fclose(file);
+}
+
+void sort_sportsman(sportsman sm[], const int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (sm[j].best_result < sm[j + 1].best_result) {
+
+                sportsman temp = sm[j];
+                sm[j] = sm[j + 1];
+                sm[j + 1] = temp;
+            }
+        }
+    }
+}
+
+void get_best_team(const char* fname, const int n) {
+
+    FILE* file = fopen(fname, "rb");
+
+    if (file == NULL) {
+        printf("Error: Don`t read file\n");
+        exit(1);
+    }
+
+    sportsman* team = (sportsman*) malloc(MAX_AMOUNT_SPORTSMAN * sizeof(sportsman));
+
+    sportsman* rec = team;
+
+    int amount_sportsman = 0;
+
+    while (fread(rec, sizeof(sportsman), 1, file) == 1) {
+        rec ++;
+        amount_sportsman++;
+    }
+
+    fclose(file);
+
+    file = fopen(fname, "wb");
+
+    if (file == NULL) {
+        printf("Error: Don`t read file\n");
+        exit(1);
+    }
+
+    sort_sportsman(team, amount_sportsman);
+
+    int amount_in_team = amount_sportsman >= n ? n : amount_sportsman;
+
+    for (int i = 0; i < amount_in_team; i++) {
+        fwrite(team + i, sizeof(sportsman), 1, file);
+    }
+
+    free(team);
+    fclose(file);
+}
